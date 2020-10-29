@@ -15,7 +15,7 @@
 int main()
 {
 	int profit;
-	scanf("%d", &profit);
+	(void)scanf("%d", &profit);
 	if (profit <= 100000)
 	{
 		printf("%d", (int)(profit * 0.1));

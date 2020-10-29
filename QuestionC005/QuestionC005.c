@@ -11,7 +11,7 @@
 int main()
 {
 	int eightDigitalInteger;
-	scanf("%d", &eightDigitalInteger);
+	(void)scanf("%d", &eightDigitalInteger);
 	int midFour = (eightDigitalInteger / 100) % 10000; //取出中间4位
 	printf("%d %d\n", midFour, midFour + 1024);
 	return 0;

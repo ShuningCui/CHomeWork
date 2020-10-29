@@ -11,7 +11,7 @@
 int main()
 {
 	char uppercaseLetter;
-	scanf("%c", &uppercaseLetter);
+	(void)scanf("%c", &uppercaseLetter);
 	printf("%c%c%c", uppercaseLetter - 1 < 'A' ? 'Z' : uppercaseLetter - 1, uppercaseLetter,
 		uppercaseLetter + 1 > 'Z' ? 'A' : uppercaseLetter + 1);
 	return 0;

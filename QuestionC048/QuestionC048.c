@@ -15,7 +15,7 @@ int main()
 {
 	double money, rate;
 	int years;
-	scanf("%lf,%d,%lf", &money, &years, &rate);
+	(void)scanf("%lf,%d,%lf", &money, &years, &rate);
 	printf("%.2lf", money * pow((1 + rate), years));
 	return 0;
 }

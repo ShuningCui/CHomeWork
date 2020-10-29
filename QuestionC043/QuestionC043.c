@@ -11,7 +11,7 @@
 int main()
 {
 	double a, b, c;
-	scanf("%lf%lf%lf", &a, &b, &c);
+	(void)scanf("%lf%lf%lf", &a, &b, &c);
 	double sum = a + b + c;
 	printf("%g %d", sum, (int)(sum + 0.5));
 	return 0;

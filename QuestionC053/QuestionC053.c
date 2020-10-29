@@ -11,7 +11,7 @@
 int main()
 {
 	char letter01, letter02, letter03, letter04;
-	scanf("%c%c%c%c", &letter01, &letter02, &letter03, &letter04);
+	(void)scanf("%c%c%c%c", &letter01, &letter02, &letter03, &letter04);
 	printf("%c %d %c\n", letter01, letter01, letter01 + 1);
 	printf("%c %d %c\n", letter02, letter02, letter02 + 1);
 	printf("%c %d %c\n", letter03, letter03, letter03 + 1);

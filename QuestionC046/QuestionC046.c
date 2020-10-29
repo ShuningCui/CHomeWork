@@ -10,7 +10,7 @@ printf("%d:%.2d:%.2d\n", h, m, s)
 int main()
 {
 	int totalSecond;
-	scanf("%d", &totalSecond);
+	(void)scanf("%d", &totalSecond);
 	printf("%d:%.2d:%.2d\n", totalSecond / 3600,
 		(totalSecond % 3600) / 60, totalSecond % 3600 % 60);
 	return 0;

@@ -11,7 +11,7 @@
 int main()
 {
 	int a, b;
-	scanf("%d %d", &a, &b);
+	(void)scanf("%d %d", &a, &b);
 	int c = a * a + b * b;
 	printf("%d", c >= 100 ? c / 100 : c);
 	return 0;
