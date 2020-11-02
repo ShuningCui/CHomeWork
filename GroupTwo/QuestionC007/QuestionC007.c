@@ -11,9 +11,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
-#include<math.h>
 
-/*
 int IsomorphicNumber(int x, int xx);
 int main()
 {
@@ -53,22 +51,4 @@ int IsomorphicNumber(int x, int xx)
 		xx = xx / 10;
 	}
 	return 1;
-}
-
-*/
-
-int main()
-{
-	int m, n;
-	(void)scanf("%d%d", &m, &n);
-	int firstNum = 0;
-	for (int i = m; i <= n; i++)
-	{
-		int a = log10(i) + 1;
-		if ((i*i)%(int)(pow(10,a))==i)
-		{
-			firstNum++ == 0 ? printf("%d", i) : printf(" %d", i);
-		}
-	}
-	return 0;
 }
