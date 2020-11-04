@@ -17,6 +17,7 @@ int main()
 	int a1 = ((teleNum / 10) % 10 + 5) % 10;
 	int a2 = ((teleNum / 100) % 10 + 5) % 10;
 	int a3 = (teleNum / 1000 + 5) % 10;
-	printf("%d", a0 * 1000 + a1 * 100 + a2 * 10 + a3);
+	printf("%d", a0 * 1000 + 
+		a1 * 100 + a2 * 10 + a3);
 	return 0;
 }

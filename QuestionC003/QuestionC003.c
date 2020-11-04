@@ -9,7 +9,7 @@
 int main()
 {
 	int one, two, three;
-	(void)(void)scanf("%d%d%d", &one, &two, &three);
+	(void)scanf("%d%d%d", &one, &two, &three);
 	for (int i = 0; i < one; i++)
 	{
 		printf("*");
