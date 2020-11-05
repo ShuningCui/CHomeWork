@@ -16,7 +16,7 @@ int main()
 	for (int i = 0; i < NUM; i++)
 	{
 		int x;
-		scanf("%d", &x);
+		(void)scanf("%d", &x);
 		if (IsPrime(x))
 		{
 			prime[primeNum++] = x;
