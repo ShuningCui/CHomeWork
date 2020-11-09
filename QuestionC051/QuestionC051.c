@@ -6,7 +6,7 @@
 int main()
 {
 	int a, b, c;
-	scanf("%d%d%d", &a, &b, &c);
+	(void)scanf("%d%d%d", &a, &b, &c);
 	int max = a;
 	int min = a;
 	while (a % min || b % min || c % min)

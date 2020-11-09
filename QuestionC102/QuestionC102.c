@@ -9,17 +9,17 @@
 int main()
 {
 	int n;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 
 	int i = 1;
 	int nextNum;
-	scanf("%d", &nextNum);
+	(void)scanf("%d", &nextNum);
 	int max = nextNum;
 	int maxNum = 1;
 
 	while (i < n)
 	{
-		scanf("%d", &nextNum);
+		(void)scanf("%d", &nextNum);
 		if (nextNum == max)
 		{
 			maxNum++;

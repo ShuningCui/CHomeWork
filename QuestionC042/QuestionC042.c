@@ -7,6 +7,6 @@ int main()
 {
 	int a, b, c;
 	(void)scanf("%d%d%d", &a, &b, &c);
-	printf("%g", (a + b + c) / 3.0);
+	printf("%g", (float)(a + b + c) / 3);
 	return 0;
 }

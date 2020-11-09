@@ -13,7 +13,7 @@
 int main() 
 {
 	int num;
-	scanf("%d", &num);
+	(void)scanf("%d", &num);
 	int a = num * (num - 1) + 1;
 	printf("%d", a);
 	for (int i = 1; i < num; i++) 

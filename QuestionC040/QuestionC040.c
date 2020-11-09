@@ -1,30 +1,16 @@
-/*求[n, m]区间中的所有素数及素数的个数。
-输入：n, m
-输出：列出[n, m]中的所有素数，中间用一个空格隔开，最后显示素数的个数。
-样例：
-10 30
-11 13 17 19 23 29 6
-*/
+//输入一个整数n(n >= 2)，判断n是否为素数。是素数输出 "YES", 否则输出 "NO"。
 
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
+
 int IsPrime(int x);
 
 int main()
 {
-	int m, n;
-	(void)scanf("%d%d", &n, &m);
-	int sum = 0;
-	for (int i = n; i <= m; i++)
-	{
-		if (IsPrime(i))
-		{
-			printf("%d ", i);
-			sum++;
-		}
-	}
-	printf("%d", sum);
+	int n;
+	scanf("%d", &n);
+	printf("%s", IsPrime(n) ? "YES" : "NO");
 	return 0;
 }
 

@@ -14,8 +14,8 @@
 #include<stdio.h>
 int main()
 {
-	int profit;
-	(void)scanf("%d", &profit);
+	long long profit;
+	(void)scanf("%lld", &profit);
 	if (profit <= 100000)
 	{
 		printf("%d", (int)(profit * 0.1));
@@ -40,8 +40,8 @@ int main()
 	}
 	if (profit > 1000000)
 	{
-		printf("%d", (int)(100000 * 0.1 + 100000 * 0.08 + 200000 * 0.05
-			+ 20000 * 0.03 + 400000 * 0.02 + (profit - 100000) * 0.01));
+		printf("%d", (int)((100000 * 0.1 + 100000 * 0.08 + 200000 * 0.05
+			+ 20000 * 0.03 + 400000 * 0.02 + profit - 100000) * 0.01));
 	}
 	return 0;
 }

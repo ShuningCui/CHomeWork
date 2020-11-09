@@ -13,7 +13,7 @@ int main()
 	int denominator = 1;
 	double sum = (double)numerator / denominator;
 	int n;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	for (int i = 1; i < n; i++)
 	{
 		int temp = denominator;

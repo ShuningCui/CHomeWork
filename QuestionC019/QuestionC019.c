@@ -10,7 +10,7 @@
 int main()
 {
 	int n;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	int sum = 0;
 	int isFirst = 0;
 	int i = 2;

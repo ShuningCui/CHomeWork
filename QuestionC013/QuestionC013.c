@@ -7,10 +7,10 @@ int main()
 {
 	unsigned n;
 	(void)scanf("%u", &n);
-	for (int i = 1; i <= n / 2; i++)
+	for (unsigned i = 1; i <= n / 2; i++)
 	{
 		int sum = 0;
-		for (int j = i; sum <= n; j++)
+		for (unsigned j = i; sum <= n; j++)
 		{
 			sum = sum + j;
 			if (sum == n)

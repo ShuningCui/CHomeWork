@@ -12,7 +12,7 @@ n值由用户从键盘输入，换法的数量。
 int main()
 {
 	int n;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	n = n * 100;
 	int sum = 0;
 	for (int i = 1; i < n; i++)
