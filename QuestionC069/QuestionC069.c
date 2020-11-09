@@ -22,7 +22,8 @@ int main()
 	int resverseInputNum = 0;
 	while (inputNum)
 	{
-		resverseInputNum = resverseInputNum * 10 + inputNum % 10;
+		resverseInputNum = resverseInputNum * 10 + 
+			inputNum % 10;
 		inputNum /= 10;
 	}
 	while (resverseInputNum)
