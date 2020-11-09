@@ -4,6 +4,8 @@
 输入 :
 第n次的值, 整数
 输出：小球经过的路程长度和小球反弹的高度，分2行输出。
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

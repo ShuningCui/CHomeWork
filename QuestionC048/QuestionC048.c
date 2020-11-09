@@ -4,6 +4,8 @@
 sum = money*(1 + rate)^years
 输入:存款金额，存期，年利率。均为浮点数，且用逗号分隔
 输出：存款本息（保留2位小数）
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

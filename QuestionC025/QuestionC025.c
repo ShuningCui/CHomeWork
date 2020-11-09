@@ -5,7 +5,7 @@
 前一项的分子分母之和为后一项的分子。（2）级数各项的正负号交错。
 输入：项数n, 0 < n < 100.
 输出：前n项的和，格式"%f"。
-
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

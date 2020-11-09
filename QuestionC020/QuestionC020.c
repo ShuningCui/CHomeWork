@@ -5,6 +5,8 @@
 4 ^ 3 = 13 + 15 + 17 + 19
 编程实现：输入一自然数n，求组成n ^ 3的n个连续奇数。
 输入：一个正整数n。输出：组成n ^ 3的连续奇数，用一个空格分隔
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -14,6 +16,7 @@ int main()
 {
 	int num;
 	(void)scanf("%d", &num);
+	//计算出第一个奇数
 	int a = num * (num - 1) + 1;
 	printf("%d", a);
 	for (int i = 1; i < num; i++) 

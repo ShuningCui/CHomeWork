@@ -4,6 +4,8 @@
 输入保证合法，且不需考虑a或b是小数的情况。
 输出：
 输出两个整数s t，之间用一个空格分开，其中s表示小明将得到的a + b答案，t表示小明将得到的a - b答案。
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -13,7 +15,7 @@ int resverse(int x);
 int main()
 {
 	int x, y;
-	scanf("%d%d", &x, &y);
+	(void)scanf("%d%d", &x, &y);
 	int a = (x + y) / 2;
 	int b = (x - y) / 2;
 	a = a > 0 ? resverse(a) : -resverse(-a);
@@ -21,7 +23,11 @@ int main()
 	printf("%d %d", a + b, a - b);
 	return 0;
 }
-
+/// <summary>
+/// 将x反转，如123反转位321
+/// </summary>
+/// <param name="x">带反转的数</param>
+/// <returns>发转后的结果</returns>
 int resverse(int x)
 {
 	int resx = 0;

@@ -17,9 +17,14 @@ int main()
 	char str1[100], str2[100];
 	int n;
 	(void)scanf("%s%s%d", str1, str2, &n);
+	//将字符串截断为n
 	str1[n] = str2[n] = 0;
+
+	//转换为大写
 	strupr(str1);
 	strupr(str2);
+
+	//比较
 	int r = strcmp(str1, str2);
 	printf("%d", (r == 0 ? 0 : (r > 0 ? 1 : -1)));
 	return 0;

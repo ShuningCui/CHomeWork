@@ -6,6 +6,8 @@
 样例：
 1234
 617 gbh
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -26,6 +28,7 @@ int main()
 			inputNum % 10;
 		inputNum /= 10;
 	}
+	//将反转后的数字从各位逐个取出输出
 	while (resverseInputNum)
 	{
 		printf("%c", resverseInputNum % 10 + 'a');

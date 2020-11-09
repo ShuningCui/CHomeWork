@@ -1,6 +1,8 @@
 /*输入公元年份和月份，输出该月份的天数。
 输入：年，月（逗号分隔）
 输出：天数
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

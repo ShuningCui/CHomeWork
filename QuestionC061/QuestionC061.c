@@ -7,6 +7,7 @@
 6 210 54 24
 注：输入中，输入的数的个数是不确定的，不超过50，不小于2，最后的0是结束标志。
 输出中，第1个数是它们的最大公约数，后面是输入的n个数，中间用一个空格隔开。
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -21,6 +22,7 @@ int main()
 	{
 		(void)scanf("%d", &inputNum[i]);
 	} while (inputNum[i++]);
+
 	int gcd = inputNum[0];
 	while (gcd > 1)
 	{

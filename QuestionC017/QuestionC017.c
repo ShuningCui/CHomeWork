@@ -2,6 +2,8 @@
 *若a* a + b * b大于等于100，
 *则输出a * a + b * b百位及以上的数字，
 否则输出a * a + b * b。
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -11,7 +13,7 @@
 int main()
 {
 	int a, b;
-	(void)scanf("%d %d", &a, &b);
+	(void)scanf("%d%d", &a, &b);
 	int c = a * a + b * b;
 	printf("%d", c >= 100 ? c / 100 : c);
 	return 0;

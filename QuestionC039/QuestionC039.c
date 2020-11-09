@@ -5,6 +5,8 @@
 如在某层停留，无论上下人多少，均停留5秒。
 楼层的值大于等于1，小于100, 0在序列中表示结束序列输入。
 程序输入电梯运行序列，输出电梯运行时间（秒）。
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -13,8 +15,8 @@
 int main()
 {
 	int sum = 0;
-	int floor = 0;
-	int nextFloor;
+	int floor = 0;  //电梯最初在0层
+	int nextFloor;   //电梯运动到下一层
 	(void)scanf("%d", &nextFloor);
 	while (nextFloor > 0)
 	{

@@ -8,6 +8,8 @@
 1 3 5 7 9
 样例输出：
 1 3
+
+cuishuning 2020/11
 */
 
 
@@ -18,20 +20,23 @@
 int main()
 {
 	int a[100], b[100];
-	int an, bn;
-	scanf("%d", &an);
+	int an, bn;   //a和b中的元素个数
+	(void)scanf("%d", &an);
+
 	for (int i = 0; i < an; i++)
 	{
-		scanf("%d", &a[i]);
-	}
-	scanf("%d", &bn);
-	for (int i = 0; i < bn; i++)
-	{
-		scanf("%d", &b[i]);
+		(void)scanf("%d", &a[i]);
 	}
 
-	int ab[100];
-	int abn = 0;
+	(void)scanf("%d", &bn);
+	for (int i = 0; i < bn; i++)
+	{
+		(void)scanf("%d", &b[i]);
+	}
+
+	int ab[100];  //挑出的数放到ab中
+	int abn = 0;  //挑出数的个数
+
 	for (int i = 0; i < an; i++)
 	{
 		for (int j = 0; j < bn; j++)

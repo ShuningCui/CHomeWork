@@ -12,6 +12,8 @@
 样例：
 10 5
 1 2 3 4 5 6 7 8 9 0
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -20,23 +22,25 @@
 
 int main()
 {
-	int a[100], n, m, i, j;
-	scanf("%d%d", &n, &m);
-
-	for (i = 0; i < n; i++)
+	int a[100];  //要移动的数组
+	int n, m;   //数组中有n个数，移动m次
+	(void)scanf("%d%d", &n, &m);
+	
+	//将n个数读入数组
+	for (int i = 0; i < n; i++)
 	{
-		scanf("%d", &a[i]);
+		(void)scanf("%d", &a[i]);
 	}
-
-	for (i = 0; i < m; i++)
+	//循环移动
+	for (int i = 0; i < m; i++)
 	{
 		int x = a[n - 1];
-		for (j = n - 2; j >= 0; j--)
+		for (int j = n - 2; j >= 0; j--)
 			a[j + 1] = a[j];
 		a[0] = x;
 	}
-
-	for (i = 0; i < n; i++)
+	//输出
+	for (int i = 0; i < n; i++)
 	{
 		i == 0 ? printf("%d", a[i]) : printf(" %d", a[i]);
 	}

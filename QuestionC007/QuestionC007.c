@@ -58,14 +58,14 @@ int IsomorphicNumber(int x, int xx)
 int main()
 {
 	int m, n;
-	scanf("%d%d", &m, &n);
+	(void)scanf("%d%d", &m, &n);
 	int firstNum = 0;
 	for (int i = m; i <= n; i++)
 	{
-		int digi = log10(i) + 1;
+		int digi = log10(i) + 1;  //求i的位数
 		if ((i * i) % (int)pow(10, digi) == i)
 		{
-			if (firstNum == 0)
+			if (firstNum == 0)  //是否是输出的第一个数
 			{
 				printf("%d", i);
 				firstNum++;

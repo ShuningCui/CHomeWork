@@ -1,4 +1,5 @@
 //C051 - 求最大公约数和最小公倍
+//cuishuning 2020/11
 
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>

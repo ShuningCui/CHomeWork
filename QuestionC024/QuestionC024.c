@@ -4,6 +4,8 @@
 n值由用户从键盘输入，换法的数量。
 输入：整数n
 输出：一个整数
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
