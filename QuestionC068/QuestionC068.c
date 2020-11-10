@@ -17,7 +17,7 @@ char* DelChar(char* str, char ch);
 int main()
 {
 	char blankString[200];
-	gets(blankString);
+	fgets(blankString,200,stdin);
 
 	printf("%s\n", DelChar(blankString,' '));
 	return 0;

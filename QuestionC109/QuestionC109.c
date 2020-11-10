@@ -3,6 +3,8 @@
 提示：测试用例输出的冒号是中文冒号。
 输入：任意长度的字符串。
 输出：统计其中大写字母，小写字母，数字字符及其它字符的个数。
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -20,7 +22,7 @@ int main()
 	Count count[4] = { {"大写字母：",0},{"小写字母：",0},
 		{"数字字符：",0},{"其它字符：",0} };
 	char countStr[200];
-	scanf("%s", countStr);
+	(void)scanf("%s", countStr);
 
 	int i = 0;
 	while (countStr[i])

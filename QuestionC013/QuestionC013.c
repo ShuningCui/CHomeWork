@@ -13,7 +13,7 @@ int main()
 	//2+3+4.....
 	for (unsigned i = 1; i <= n / 2; i++)
 	{
-		int sum = 0;
+		unsigned sum = 0;
 		for (unsigned j = i; sum <= n; j++)
 		{
 			sum = sum + j;

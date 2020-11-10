@@ -5,6 +5,8 @@ A用D代替，x用a代替，y用b代替，保持大小写不变。
 字符串中的非字母字符不变。字符串的长度不超过100。
 输入：一个字符串和非负整数k
 输出：加密的字符串。
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -17,7 +19,7 @@ int main()
 {
 	char str[100];
 	int n;
-	scanf("%s%d", str, &n);
+	(void)scanf("%s%d", str, &n);
 	int i = 0;
 	while (str[i])
 	{

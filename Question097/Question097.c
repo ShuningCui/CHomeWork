@@ -5,6 +5,8 @@
 例如：当s = "112345"，t = "2467"时，u = "1135"。若s = "12", t = "12", 输出"#"
 输入：两个字符串，中间用空格隔开。scanf("%s%s", s, t);
 输出：结果串
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -16,7 +18,7 @@ int Search(char* str, char ch);
 int main()
 {
 	char s[100], t[100], u[100] = { 0 };
-	scanf("%s%s", s, t);
+	(void)scanf("%s%s", s, t);
 	int si = 0, ui = 0;
 	while (s[si])
 	{

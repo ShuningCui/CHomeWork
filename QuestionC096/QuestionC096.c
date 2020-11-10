@@ -3,6 +3,8 @@
 输入要检查的字符串，长度不超过100个字符。例如：abacaeedabcdcd。
 输出：
 删除重复字符后的字符串。例如：abced。
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

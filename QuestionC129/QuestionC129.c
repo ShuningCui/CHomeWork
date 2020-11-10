@@ -3,6 +3,8 @@
 输出字母a～z的出现次数，数据间以英文逗号分隔。非英文字母不统计。
 输入：可能带空格的字符串。
 输出：26个整数，以英文逗号分隔。
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -13,8 +15,8 @@
 int main()
 {
 	char inputStr[200] = { 0 };
-	gets(inputStr);
-	strupr(inputStr);
+	fgets(inputStr,200,stdin);
+	_strupr(inputStr);   //转换为大写
 	int count[26] = { 0 };
 
 	int i = 0;

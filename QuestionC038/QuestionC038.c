@@ -1,7 +1,7 @@
 //闰年计算。程序输入一个正整数Y，以及另一个正整数N，
 //以一个空格分隔。计算从Y年开始后的第N个闰年是哪一年
 //（如果Y本身是闰年，则Y之后的第一个闰年是Y）。
-
+//cuishuning 2020/11
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>

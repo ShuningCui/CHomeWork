@@ -6,6 +6,8 @@
 第2行，输入一个字符
 输出：
 占一行
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -17,6 +19,8 @@ int main()
 {
 	char str[200];
 	char ch;
+
+	//读入一个字符串，以回车结尾；抛弃回车；再读入一个字符
 	(void)scanf("%[^\n]%*c%c", str, &ch);
 	printf("%s", DelChar(str, ch));
 	return 0;

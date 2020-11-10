@@ -4,6 +4,8 @@ int ispalindrome(int n);
 其中参数n是待判断的正整数，该函数有返回结果。
 编写主函数，对上述函数进行测试，并找出1000∽n(1000 ≤ n < 10000)之间的所有回文数，
 按从小到大的次序在屏幕上显示输出，每个数之间用一个空格分隔，最后一个数后面没有空格。
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -14,7 +16,7 @@ int Ispalindrome(int n);
 int main()
 {
 	int n;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	int firstNum = 0;
 
 	for (int i = 1000; i <= n; i++)

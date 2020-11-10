@@ -5,6 +5,8 @@
 字符比较：字母表中后面的大于前面的。
 输入：两个字符串和一个正整数。
 输出：1、 - 1或0。
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -21,8 +23,8 @@ int main()
 	str1[n] = str2[n] = 0;
 
 	//转换为大写
-	strupr(str1);
-	strupr(str2);
+	_strupr(str1);
+	_strupr(str2);
 
 	//比较
 	int r = strcmp(str1, str2);

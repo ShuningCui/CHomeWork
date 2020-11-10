@@ -9,6 +9,8 @@
 ÑùÀı2£º
 100 200
 - 1
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -19,7 +21,7 @@ int main()
 {
 	int n, m;
 	const int step = 2 * 3 * 5 * 7;
-	scanf("%d%d", &n, &m);
+	(void)scanf("%d%d", &n, &m);
 	int sum = 0;
 	int k = 1;
 	while (n > k * step)

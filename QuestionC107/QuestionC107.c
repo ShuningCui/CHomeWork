@@ -2,6 +2,8 @@
 输出不是两个数组共有的元素，并从小到大排序输出。
 输入：两个数组的元素（小于10个），数组中第一个数据指示元素的个数.
 输出：两个数组的元素中非共有的元素, 并且从小到大进行排序.
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -22,9 +24,11 @@ int main()
 	nNum01 = NumInput(num01);
 	nNum02 = NumInput(num02);
 
+	//查找在第一个数组中不在第二个数组中的数
 	nNoAltogether = FindNoAltogether(num01, num02, nNum01, nNum02, noAltogether, 0);
+	//查找在第二个数组中不在第一个数组中的数
 	nNoAltogether += FindNoAltogether(num02, num01, nNum02, nNum01, noAltogether, nNoAltogether);
-
+	//排序
 	Bubble(noAltogether, nNoAltogether);
 
 	printf("%d", noAltogether[0]);

@@ -1,6 +1,8 @@
 /*从键盘输入两个正整数m和n，然后从m + 1开始找出大于m的n个素数。
 输入：m, n
 输出：n个素数，数据间以一个空格分隔。
+
+cuishuning 2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
