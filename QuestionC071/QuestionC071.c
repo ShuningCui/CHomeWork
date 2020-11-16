@@ -43,7 +43,11 @@ int main()
 	}
 	return 0;
 }
-
+/// <summary>
+/// 判断整数x的各个位是否有相同的
+/// </summary>
+/// <param name="x">整数x</param>
+/// <returns>没有相同的位返回1，否则返回0</returns>
 int IsDifferent(int x)
 {
 	int num = 0;
