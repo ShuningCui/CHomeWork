@@ -222,3 +222,113 @@ int IsPalindrome(int n)
 	}
 	return m == resN;
 }
+
+/// <summary>
+/// 反转字符串，strrev在c99标准中不是标准库函数，一些编译器并没提供
+///如果编译器提供了该函数，尽量使用编译器提供的版本
+/// </summary>
+/// <param name="str">待反转的字符串</param>
+/// <returns>反转后的字符串</returns>
+char* strrev(char* str)
+{
+	int j = strlen(str);   //the length of string
+	for (int i = 0; i < j / 2; i++)  //swap head and tail
+	{
+		char t = str[i];
+		str[i] = str[j - i - 1];
+		str[j - i - 1] = t;
+	}
+	return str;
+}
+
+/// <summary>
+/// 将字符串中的某一个字符替换为另一个字符
+/// </summary>
+/// <param name="str">替换的字符串</param>
+/// <param name="ch">被替换的字符</param>
+/// <param name="repCh">替换后的字符</param>
+/// <returns>替换的字符个数</returns>
+int ReplaceChar(char* str, char ch, char repCh)
+{
+	int i = 0;
+	int sum = 0;
+	while (str[i])
+	{
+		if (str[i] == ch)
+		{
+			str[i] = repCh;
+			sum++;
+		}
+		i++;
+	}
+	return sum;
+}
+
+
+/// <summary>
+/// 将整数按指定的进制（2<=radix<=16) 分解为字符串
+/// </summary>
+/// <param name="num">num, the decomposed character string，分解后存放结果的字符串</param>
+/// <param name="n">n, the integer will be decomposed，带分解的整数</param>
+/// <param name="radix">radix, the specified base，指定的进制</param>
+/// <returns>the pointer of the decomposed character string,
+///that is the pointer of num，指向分解后的字符串的指针，也就是指向num的指针</returns>
+char* IntToString(char* num, int n, int radix)
+{
+	int i = 0;
+	while (n)
+	{
+		int m = n % radix;
+		if (0 <= m && m <= 9)  //convert it to ASCII code
+		{
+			num[i++] = m + '0';
+		}
+		else   //convert it to 'A'-'F' over 10
+		{
+			num[i++] = m - 10 + 'A';
+		}
+		n = n / radix; //the next number
+	}
+	num[i] = 0;
+	strrev(num);  //reverse the string
+	return num;
+}
+
+
+/// <summary>
+/// 将一个字符串按指定字符分隔为若干字符串存储到二维数组中
+/// Separate a string into several strings according
+/// to the specified charactersand
+/// store them in a two - dimensional array
+/// </summary>
+/// <param name="split">the 2-D array stored the substrings
+/// 存放分解结果的2维数组</param>
+/// <param name="str">the original character string，原始字符串</param>
+/// <param name="x">the separated character，分隔字符</param>
+/// <returns>the number of separator strings，分隔后的字符串数目</returns>、
+
+int SplitString(char split[][100], char* str, char x)
+{
+	RomoveCharAtEnd(str, x);
+	RomoveCharAtBegin(str, x);
+	int sum = 0;
+	int i = 0;
+	int j = 0;
+	while (str[i])
+	{
+		if (str[i] == x)  //meet the separated character
+		{
+			split[sum][j] = 0;  //the end of this line
+			sum++;
+			j = 0;
+			while (str[i++] == x);  //skip consecutive separators
+			i--;
+		}
+		else
+		{
+			split[sum][j++] = str[i++];  //copy to the 2-D array
+		}
+	}
+	split[sum][j] = 0;
+	return ++sum;
+}
