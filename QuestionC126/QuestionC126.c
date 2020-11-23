@@ -12,7 +12,7 @@ cuishuning 2020/11
 
 #include<stdio.h>
 
-int Ispalindrome(int n);
+int IsPalindrome(int n);
 int main()
 {
 	int n;
@@ -21,7 +21,7 @@ int main()
 
 	for (int i = 1000; i <= n; i++)
 	{
-		if (Ispalindrome(i))
+		if (IsPalindrome(i))
 		{
 			firstNum++ == 0 ? printf("%d", i) : printf("% d", i);
 		}
@@ -34,7 +34,7 @@ int main()
 /// </summary>
 /// <param name="n">输入的n</param>
 /// <returns>是则返回1，否返回0</returns>
-int Ispalindrome(int n)
+int IsPalindrome(int n)
 {
 	int resN = 0;
 	int m = n;
