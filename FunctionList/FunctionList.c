@@ -35,7 +35,7 @@ int IsPrime(int x)
 /// </summary>
 /// <param name="a">带排序的数组</param>
 /// <param name="n">排序的个数</param>
-void Bubble(int a[], int n)
+void Bubble(int* a, int n)
 {
 	for (int i = 0; i < n; i++)
 	{
