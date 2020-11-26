@@ -81,6 +81,8 @@ char* DelChar(char* str, char ch)
 	return str;
 }
 
+
+
 /// <summary>
 /// 查找一个字符是否在一个串中
 /// </summary>

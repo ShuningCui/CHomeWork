@@ -1,8 +1,9 @@
-/*编写函数，去掉一个字符串中除头部和尾部空格外的所有空格，并编写主函数进行调用测试。
-输入：
-占一行（注：输入的字符串长度不会超过80）
-输出：
-占一行
+/*编写程序，删除字符串中间的所有星号（* ），如果首尾有* 号，保留不变。字符串长度不超过200。
+输入：带* 号的字符串。
+输出：中间没有* 号的字符串。
+样例：
+*** street***** music***
+*** streetmusic***
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -14,22 +15,13 @@ char* DelCharBtweenStr(char* str, int i, int j, char delch);
 
 int main()
 {
-    char inputStr[100];
-    gets(inputStr);
-    //找字符串左边第一个非空格字符
+    char inStr[100];
+    gets_s(inStr, 100);
     int i = 0;
-    while (inputStr[i] && inputStr[i] == ' ')
-    {
-        i++;
-    }
-
-    //找字符串右边第一个非空格字符
-    int j = strlen(inputStr) - 1;
-    while (inputStr[j] && inputStr[j] == ' ')
-    {
-        j--;
-    }
-    printf("%s", DelCharBtweenStr(inputStr, i, j,' '));
+    while (inStr[i++] == '*');
+    int j = strlen(inStr) - 1;
+    while (inStr[j--] == '*');
+    printf("%s", DelCharBtweenStr(inStr, i - 1, j + 1, '*'));
     return 0;
 }
 
