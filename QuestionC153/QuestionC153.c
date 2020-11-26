@@ -11,39 +11,44 @@
 int main()
 {
 	int n;
-	scanf("%d", &n);
 	int a[100];
+	scanf("%d", &n);
 	for (int i = 0; i < 2 * n; i++)
 	{
 		scanf("%d", &a[i]);
 	}
+	//ÆæÊýÃ°ÅÝ
+	for (int i = 1; i < 2 * n - 1; i += 2)
+	{
+		for (int j = 2 * n - 1; j > i; j -= 2)
+		{
+			if (a[j] > a[j - 2])
+			{
+				int temp = a[j];
+				a[j] = a[j - 2];
+				a[j - 2] = temp;
+			}
+		}
+	}
 
-	for (int i = 0; i < 2 * n - 1; i+=2)
+	//Å¼ÊýÃ°ÅÝ
+
+	for (int i = 0; i < 2 * n - 2; i += 2)
 	{
-		for (int j = 2 * n - 2; j > i; j=j-2)
+		for (int j = 2 * n - 2; j > i; j -= 2)
 		{
-			if (a[j] < a[j - 1])
+			if (a[j] < a[j - 2])
 			{
 				int temp = a[j];
-				a[j] = a[j - 1];
-				a[j - 1] = temp;
+				a[j] = a[j - 2];
+				a[j - 2] = temp;
 			}
 		}
 	}
-	for (int i = 1; i < 2 * n; i+=2)
-	{
-		for (int j = 2 * n - 1; j > i; j = j - 2)
-		{
-			if (a[j] > a[j - 1])
-			{
-				int temp = a[j];
-				a[j] = a[j - 1];
-				a[j - 1] = temp;
-			}
-		}
-	}
+
+	//Êä³ö
 	printf("%d", a[0]);
-	for(int i = 1; i < 2 * n; i++)
+	for (int i = 1; i < 2 * n; i++)
 	{
 		printf(" %d", a[i]);
 	}
