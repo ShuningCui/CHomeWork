@@ -20,7 +20,7 @@ int main()
 {
 	char s[100];
 	char t[100];
-	char u[200] = { 0 };
+	char u[200] = {0};
 	scanf("%s%s", s, t);
 	_strupr(s);
 	_strupr(t);
@@ -30,6 +30,7 @@ int main()
 	printf("%s", u);
 	return 0;
 }
+
 /// <summary>
 /// 将source中的字符放入dest中，重复的不放入
 /// </summary>
@@ -44,7 +45,7 @@ void StrMerge(char* source, char* dest)
 		int flag = 0;
 		for (int m = 0; m < j; m++)
 		{
-			if (source[i] == dest[m])  //重复
+			if (source[i] == dest[m]) //重复
 			{
 				flag = 1;
 				break;

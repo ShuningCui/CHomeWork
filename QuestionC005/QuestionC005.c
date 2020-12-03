@@ -4,17 +4,20 @@
 *输入：一个整数。
 *输出：两个整数，用空格分隔。
 * 
-* cuishuning 2020/11
+* Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
+
 int main()
 {
 	int eightDigitalInteger;
 	(void)scanf("%d", &eightDigitalInteger);
-	int midFour = (eightDigitalInteger / 100) % 10000; //取出中间4位
+	//取出中间4位数字
+	//Take out the middle 4 digits
+	int midFour = (eightDigitalInteger / 100) % 10000;
 	printf("%d %d\n", midFour, midFour + 1024);
 	return 0;
 }

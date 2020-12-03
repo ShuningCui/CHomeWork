@@ -19,7 +19,7 @@ typedef struct _count
 {
 	char alphabet;
 	int c;
-}Count;
+} Count;
 
 void BubbleAlpha(Count count[]);
 
@@ -34,8 +34,8 @@ int main()
 	}
 	char input[100];
 	scanf("%[^\n]", input);
-	_strupr(input);  //转为大写字母
-	
+	_strupr(input); //转为大写字母
+
 	int i = 0;
 	while (input[i])
 	{

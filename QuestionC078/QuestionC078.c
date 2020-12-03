@@ -13,16 +13,16 @@ Vwxgb
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
-char ReplaceChar(char x, int n);
+char ShiftChar(char x, int n);
 
 int main()
 {
 	char str[200];
-	scanf("%s", str);
+	(void)scanf("%s", str);
 	int i = 0;
 	while (str[i])
 	{
-		str[i++] = ReplaceChar(str[i], 3);
+		str[i++] = ShiftChar(str[i], 3);
 	}
 	printf("%s", str);
 	return 0;
@@ -35,7 +35,7 @@ int main()
 /// <param name="x">替换的字母</param>
 /// <param name="n">替换值</param>
 /// <returns>替换后的字母,如果x不是字母，则返回x</returns>
-char ReplaceChar(char x, int n)
+char ShiftChar(char x, int n)
 {
 	if ('A' <= x && x <= 'Z')
 	{

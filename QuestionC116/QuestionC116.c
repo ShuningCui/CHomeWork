@@ -3,7 +3,7 @@
 输入，三个整数，表示年、月、日
 输出，一个整数，表示当年第几天
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 
@@ -16,14 +16,14 @@ int IsLeapyear(int year);
 int main()
 {
 	const int totalDays[12] =
-	{ 0,31,59,90,120,151,181,212,243,273,304,334 };
-	
+		{0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334};
+
 	int year, month, day;
 	(void)scanf("%d%d%d", &year, &month, &day);
 	int days = totalDays[month - 1] + day;
 	if (IsLeapyear(year) && month > 2)
 	{
-		days++;  //闰年+1
+		days++; //闰年+1
 	}
 	printf("%d", days);
 	return 0;

@@ -10,7 +10,7 @@
 
 int main()
 {
-	int count[4] = { 0 };
+	int count[4] = {0};
 	int n;
 	scanf("%d", &n);
 	while (n != -1)
@@ -19,7 +19,6 @@ int main()
 		scanf("%d", &n);
 	}
 	printf("%d %d %d %d", count[1], count[2],
-		count[3], count[0]);
+	       count[3], count[0]);
 	return 0;
 }
-

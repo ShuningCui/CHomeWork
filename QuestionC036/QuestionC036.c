@@ -14,7 +14,7 @@ int main()
 {
 	int n;
 	int k;
-	scanf("%d%d", &n, &k);
+	(void)scanf("%d%d", &n, &k);
 	char num[100];
 	printf("%s", IntToString(num, n, k));
 	return 0;
@@ -33,25 +33,25 @@ char* IntToString(char* num, int n, int radix)
 	int i = 0;
 	if (n == 0)
 	{
-		strcpy(num,"0");
+		strcpy(num, "0");
 	}
 	else
 	{
 		while (n)
 		{
 			int m = n % radix;
-			if (0 <= m && m <= 9)  //convert it to ASCII code
+			if (0 <= m && m <= 9) //convert it to ASCII code
 			{
 				num[i++] = m + '0';
 			}
-			else   //convert it to 'A'-'F' over 10
+			else //convert it to 'A'-'F' over 10
 			{
 				num[i++] = m - 10 + 'A';
 			}
 			n = n / radix; //the next number
 		}
 		num[i] = 0;
-		_strrev(num);  //reverse the string
+		_strrev(num); //reverse the string
 	}
 	return num;
 }

@@ -15,7 +15,7 @@ typedef struct _record
 	char name[20];
 	char inTime[20];
 	char outTime[20];
-}Record;
+} Record;
 
 int main()
 {
@@ -25,7 +25,7 @@ int main()
 	for (int i = 0; i < m; i++)
 	{
 		scanf("%s%s%s", record[i].name, record[i].inTime
-			, record[i].outTime);
+		      , record[i].outTime);
 	}
 
 	char name[20];
@@ -58,4 +58,3 @@ int main()
 	printf(" %s", name);
 	return 0;
 }
-

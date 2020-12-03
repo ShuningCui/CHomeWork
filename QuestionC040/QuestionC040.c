@@ -1,6 +1,6 @@
 //输入一个整数n(n >= 2)，判断n是否为素数。
 //是素数输出 "YES", 否则输出 "NO"。
-//cuishuning 2020/11
+//Cui Shuning (崔舒宁）2020/11
 
 #define _CRT_SECURE_NO_WARNINGS
 

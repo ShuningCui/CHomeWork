@@ -1,6 +1,7 @@
-//找出[m, n]范围内是7的倍数或带7的全部正整数，m和n为正整数。
-//cuishuning 2020/11
-
+/*找出[m, n]范围内是7的倍数或带7的全部正整数，m和n为正整数。
+*
+*Cui Shuning (崔舒宁）2020/11
+*/
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
@@ -19,12 +20,14 @@ int main()
 		int k = i;
 
 		//检查每一位是否有7
+		//Check whether each bit has 7
 		while (k)
 		{
 			if (k % 10 == 7)
 			{
 				printf("%d是带7的数\n", i);
-				break;   //只要有一个是7即可
+				//As long as one is 7
+				break; //只要有一个是7即可
 			}
 			k /= 10;
 		}

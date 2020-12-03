@@ -6,7 +6,7 @@
 输入：两个字符串，中间用空格隔开。scanf("%s%s", s, t);
 输出：结果串
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -17,7 +17,7 @@ int Search(char* str, char ch);
 
 int main()
 {
-	char s[100], t[100], u[100] = { 0 };
+	char s[100], t[100], u[100] = {0};
 	(void)scanf("%s%s", s, t);
 	int si = 0, ui = 0;
 	while (s[si])

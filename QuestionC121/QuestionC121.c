@@ -7,7 +7,7 @@
 输出：
 占一行
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -15,6 +15,7 @@ cuishuning 2020/11
 #include<stdio.h>
 
 char* DelChar(char* str, char ch);
+
 int main()
 {
 	char str[200];
@@ -34,14 +35,13 @@ int main()
 /// <returns>删除后的字符串</returns>
 char* DelChar(char* str, char ch)
 {
-	
 	int i = 0;
 	while (str[i])
 	{
 		if (str[i] == ch)
 		{
 			int j = 0;
-			while (str[i+j+1])
+			while (str[i + j + 1])
 			{
 				str[i + j] = str[i + j + 1];
 				j++;

@@ -12,7 +12,7 @@
 
 
 0051231232050775
-cuishuning 2020/11
+Cui Shuning (´ÞÊæÄþ£©2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -37,7 +37,6 @@ int main()
 	for (int i = 0; i < n; i++)
 	{
 		num[i] = Convert(splitStr[i]);
-
 	}
 	//ÅÅÐò
 	Bubble(num, n);

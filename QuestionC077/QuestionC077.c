@@ -14,11 +14,11 @@ int main()
 	char in[200];
 	scanf("%s", in);
 	//初始时假设出现最多次数的字符是第一个字符
-	char maxch = in[0];  
-	int maxi = 0;   //出现次数做多的下标
-	int max = 1;   //出现的次数
+	char maxch = in[0];
+	int maxi = 0; //出现次数做多的下标
+	int max = 1; //出现的次数
 
-	int i = 1;  //循环检测的下标
+	int i = 1; //循环检测的下标
 	//当前的下标和次数统计
 	int currenti = 0;
 	int currentMax = 1;

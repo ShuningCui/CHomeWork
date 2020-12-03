@@ -10,13 +10,14 @@
 100 200
 - 1
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 
 int IsDifferent(int x);
+
 int main()
 {
 	int n, m;
@@ -43,6 +44,7 @@ int main()
 	}
 	return 0;
 }
+
 /// <summary>
 /// 判断整数x的各个位是否有相同的
 /// </summary>
@@ -58,7 +60,7 @@ int IsDifferent(int x)
 		x /= 10;
 	}
 
-	for (int i = 0; i < num-1; i++)
+	for (int i = 0; i < num - 1; i++)
 	{
 		for (int j = i + 1; j < num; j++)
 		{
@@ -66,7 +68,6 @@ int IsDifferent(int x)
 			{
 				return 0;
 			}
-				
 		}
 	}
 	return 1;

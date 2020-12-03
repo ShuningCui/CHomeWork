@@ -14,7 +14,7 @@ typedef struct wordCount
 {
 	char word[30];
 	char count;
-}WordCount;
+} WordCount;
 
 int main()
 {
@@ -34,9 +34,8 @@ int main()
 				flag = 1;
 				break;
 			}
-	
 		}
-		if (flag == 0)  //新单词
+		if (flag == 0) //新单词
 		{
 			strcpy(wordCount[n].word, inStr);
 			wordCount[n++].count = 1;
@@ -52,4 +51,3 @@ int main()
 	}
 	return 0;
 }
-

@@ -9,18 +9,20 @@ student
 t nt ent dent udent tudent student
 */
 
+#define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
-char* strrev(char* str);
+#include<string.h>
+
 int main()
 {
 	char str[100];
-	scanf("%s", str);
-	int maxi = strlen(str)-1;
-	printf("%s", str+maxi);
+	(void)scanf("%s", str);
+	int maxi = strlen(str) - 1;
+	printf("%s", str + maxi);
 	for (int i = 1; i <= maxi; i++)
 	{
-		printf(" %s",str+maxi-i);
+		printf(" %s", str + maxi - i);
 	}
 	return 0;
 }

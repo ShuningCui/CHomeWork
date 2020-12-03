@@ -16,21 +16,21 @@ int main()
 {
 	int n;
 	scanf("%d", &n);
-	
+
 	char num[200];
 	int i = 0;
 
 	while (n)
 	{
-		if ((i + 1) % 4 == 0)  //加逗号的位置
+		if ((i + 1) % 4 == 0) //加逗号的位置
 		{
 			num[i++] = ',';
 		}
-		num[i++] = n % 10 + '0';  //数字转字符
+		num[i++] = n % 10 + '0'; //数字转字符
 		n = n / 10;
 	}
 
-	for (int j = i - 1; j >= 0; j--)  //倒序输出
+	for (int j = i - 1; j >= 0; j--) //倒序输出
 	{
 		printf("%c", num[j]);
 	}

@@ -6,7 +6,7 @@
 输入：一个字符串和一个非负整数，中间用空格隔开。
 输出：去掉多余* 号的字符串。
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -16,7 +16,7 @@ cuishuning 2020/11
 
 int main()
 {
-	char str[200] = { 0 };
+	char str[200] = {0};
 	(void)scanf("%s", str);
 	int len = strlen(str);
 

@@ -30,21 +30,24 @@ int main()
 	{
 		printf(" %d", a[i]);
 	}
-    return 0;
+	return 0;
 }
 
-void SelectionSort(int a[], int n) {
-    int biggest;
-    for (int i = 0; i < n - 1; i++) {
-        biggest = i;
-        for (int j = i + 1; j < n; j++) {
-            if (a[j] > a[biggest])
-                biggest = j;
-        }
-        int temp = a[biggest];
-        a[biggest] = a[i];
-        a[i] = temp;
-    }
+void SelectionSort(int a[], int n)
+{
+	int biggest;
+	for (int i = 0; i < n - 1; i++)
+	{
+		biggest = i;
+		for (int j = i + 1; j < n; j++)
+		{
+			if (a[j] > a[biggest])
+				biggest = j;
+		}
+		int temp = a[biggest];
+		a[biggest] = a[i];
+		a[i] = temp;
+	}
 }
 
 /// <summary>

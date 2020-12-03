@@ -12,7 +12,7 @@ char* DelChar(char* str, char ch);
 int main()
 {
 	char input[100];
-	gets(input);
+	gets_s(input,100);
 	int i = 0;
 	while (input[i])
 	{
@@ -35,7 +35,6 @@ int main()
 /// <returns>É¾³ýºóµÄ×Ö·û´®</returns>
 char* DelChar(char* str, char ch)
 {
-
 	int i = 0;
 	while (str[i])
 	{

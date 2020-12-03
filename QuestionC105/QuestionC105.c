@@ -22,6 +22,7 @@ int main()
 	printf("max:%s min:%s\n", word[4], word[0]);
 	return 0;
 }
+
 /// <summary>
 /// ╤т╣╔╢й╣дц╟ещеепР
 /// </summary>

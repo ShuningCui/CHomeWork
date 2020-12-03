@@ -5,14 +5,16 @@
 若没有空格，则输出字符串“NotFound”。
 */
 
+#define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
 int ReplaceChar(char* str, char ch, char repCh);
+
 int main()
 {
 	char str[200];
-	scanf("%[^\n]", str);
-	printf("%s", ReplaceChar(str, ' ', ',') ==0 ? "NotFound" : str);
+	(void)scanf("%[^\n]", str);
+	printf("%s", ReplaceChar(str, ' ', ',') == 0 ? "NotFound" : str);
 	return 0;
 }
 

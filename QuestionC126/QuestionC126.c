@@ -5,7 +5,7 @@ int ispalindrome(int n);
 编写主函数，对上述函数进行测试，并找出1000∽n(1000 ≤ n < 10000)之间的所有回文数，
 按从小到大的次序在屏幕上显示输出，每个数之间用一个空格分隔，最后一个数后面没有空格。
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -13,6 +13,7 @@ cuishuning 2020/11
 #include<stdio.h>
 
 int IsPalindrome(int n);
+
 int main()
 {
 	int n;
@@ -43,5 +44,5 @@ int IsPalindrome(int n)
 		resN = resN * 10 + n % 10;
 		n /= 10;
 	}
-	return m==resN;
+	return m == resN;
 }

@@ -4,7 +4,7 @@
 输入：任意长度的字符串。
 输出：统计其中大写字母，小写字母，数字字符及其它字符的个数。
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -15,12 +15,14 @@ typedef struct _count
 {
 	char kind[20];
 	int c;
-}Count;
+} Count;
 
 int main()
 {
-	Count count[4] = { {"大写字母：",0},{"小写字母：",0},
-		{"数字字符：",0},{"其它字符：",0} };
+	Count count[4] = {
+		{"大写字母：", 0}, {"小写字母：", 0},
+		{"数字字符：", 0}, {"其它字符：", 0}
+	};
 	char countStr[200];
 	(void)scanf("%s", countStr);
 

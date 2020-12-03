@@ -4,7 +4,7 @@
 输入：可能带空格的字符串。
 输出：26个整数，以英文逗号分隔。
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -14,10 +14,10 @@ cuishuning 2020/11
 
 int main()
 {
-	char inputStr[200] = { 0 };
-	fgets(inputStr,200,stdin);
-	_strupr(inputStr);   //转换为大写
-	int count[26] = { 0 };
+	char inputStr[200] = {0};
+	fgets(inputStr, 200,stdin);
+	_strupr(inputStr); //转换为大写
+	int count[26] = {0};
 
 	int i = 0;
 	while (inputStr[i])

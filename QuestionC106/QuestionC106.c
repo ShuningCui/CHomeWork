@@ -9,49 +9,57 @@
 输出剩下的新兵最初的编号。
 */
 
+#define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
+#include<stdlib.h>
 
-#define _CRT_SECURE_NO_WARNINGS
+int Compress(int a[], int n);
 
 int main()
 {
-    int a[6000], n, i;
-    int flag = 0;  //区分是1-2报数还是1-3报数
-    scanf("%d", &n);
-    for (i = 0; i < n; i++) //初始化数组
-    {
-        a[i] = i + 1;
-    }
-    while (n > 3)  //剩下的人数超过3人
-    {
-        if (flag == 0)  //1-2报数
-        {
-            for (i = 0; i < n; i++)
-            {
-                if ((i + 1) % 2 == 0)
-                {
-                    a[i] = 0;  //出队的标记为0
-                }                   
-            }
-            flag = 1;
-        }
-        else   //1-3报数
-        {
-            for (i = 0; i < n; i++)
-            {
-                if ((i + 1) % 3 == 0)
-                {
-                    a[i] = 0;
-                }
-            }
-            flag = 0;
-        }
-        n = Compress(a, n);
-    }
+	//int a[6000], n, i;
+	int n, i;
+	int* a = (int*)malloc(6000 * sizeof(int));
+	if (a == NULL)
+	{
+		return 0;
+	}
+	int flag = 0; //区分是1-2报数还是1-3报数
+	(void)scanf("%d", &n);
+	for (i = 0; i < n; i++) //初始化数组
+	{
+		a[i] = i + 1;
+	}
+	while (n > 3) //剩下的人数超过3人
+	{
+		if (flag == 0) //1-2报数
+		{
+			for (i = 0; i < n; i++)
+			{
+				if ((i + 1) % 2 == 0)
+				{
+					a[i] = 0; //出队的标记为0
+				}
+			}
+			flag = 1;
+		}
+		else //1-3报数
+		{
+			for (i = 0; i < n; i++)
+			{
+				if ((i + 1) % 3 == 0)
+				{
+					a[i] = 0;
+				}
+			}
+			flag = 0;
+		}
+		n = Compress(a, n);
+	}
 
-    printf("%d %d %d", a[0],a[1],a[2]);
-    return 0;
+	printf("%d %d %d", a[0], a[1], a[2]);
+	return 0;
 }
 
 /// <summary>
@@ -62,17 +70,17 @@ int main()
 /// <returns>非零的数目</returns>
 int Compress(int a[], int n)
 {
-    int i = 0, k;
-    for (i = 0; i < n; i++)
-    {
-        if (a[i] == 0)
-        {
-            for (k = i; k <= n - 1; k++)
-            {
-                a[k] = a[k + 1];
-            }          
-            n = n - 1;
-        }
-    }
-    return n;
+	int i = 0, k;
+	for (i = 0; i < n; i++)
+	{
+		if (a[i] == 0)
+		{
+			for (k = i; k <= n - 1; k++)
+			{
+				a[k] = a[k + 1];
+			}
+			n = n - 1;
+		}
+	}
+	return n;
 }

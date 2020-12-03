@@ -6,7 +6,7 @@
 输入：一滴是多少毫升和一瓶盐水有多少毫升，中间用空格隔开.
 输出：滴完需要多少时间.
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -19,8 +19,8 @@ int main()
 	(void)scanf("%f%f", &d, &v);
 	int totalInterval = 0;
 	int n = 1;
-	int t = (int)(v / d);  //是否是整倍数
-	int time = v / d - t > 0 ? t + 1 : t;  //统计滴的次数
+	int t = (int)(v / d); //是否是整倍数
+	int time = v / d - t > 0 ? t + 1 : t; //统计滴的次数
 	while (v > 0) //统计间隔次数
 	{
 		for (int i = 0; i < n; i++)
@@ -31,7 +31,7 @@ int main()
 				break;
 			}
 		}
-		totalInterval++;  //统计间隔次数
+		totalInterval++; //统计间隔次数
 		n++;
 	}
 	printf("%d", time + totalInterval - 1);

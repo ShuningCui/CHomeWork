@@ -1,8 +1,9 @@
-/*输入若干个整数，其值在0至4的范围内，用 - 1作为输入结束的标志，统计每个整数的个数。
-输入：[0, 4]内的整数组成的序列，最后是 - 1，用空格隔开。
-输出：0, 1, 2, 3, 4的统计个数，用一个空格隔开。
+/*输入若干个整数，其值在0至4的范围内，
+*用 - 1作为输入结束的标志，统计每个整数的个数。
+*输入：[0, 4]内的整数组成的序列，最后是 - 1，用空格隔开。
+*输出：0, 1, 2, 3, 4的统计个数，用一个空格隔开。
 
-cuishuing 2020/11
+* Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -14,17 +15,19 @@ cuishuing 2020/11
 
 int main()
 {
-	int countZero = 0;  //0的个数
+	//0-4的个数
+	//number of 0-4
+	int countZero = 0;
 	int countOne = 0;
 	int countTwo = 0;
 	int countThree = 0;
 	int countFour = 0;
 
-	int input = 0;
-	(void)scanf("%d", &input);
-	while (input != -1)
+	int inputNumber = 0;
+	(void)scanf("%d", &inputNumber);
+	while (inputNumber != -1)
 	{
-		switch (input)
+		switch (inputNumber)
 		{
 		case 0:
 			countZero++;
@@ -42,13 +45,14 @@ int main()
 			countFour++;
 			break;
 		}
-		(void)scanf("%d", &input);
+		(void)scanf("%d", &inputNumber);
 	}
 
 	printf("%d %d %d %d %d\n", countZero,
-		countOne, countTwo, countThree, countFour);
+	       countOne, countTwo, countThree, countFour);
 	return 0;
 }
+
 /*
 int main()
 {

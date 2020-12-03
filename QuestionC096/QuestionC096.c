@@ -4,7 +4,7 @@
 Êä³ö£º
 É¾³ýÖØ¸´×Ö·ûºóµÄ×Ö·û´®¡£ÀýÈç£ºabced¡£
 
-cuishuning 2020/11
+Cui Shuning (´ÞÊæÄþ£©2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -34,7 +34,6 @@ int main()
 /// <returns>É¾³ýºóµÄ×Ö·û´®</returns>
 char* DelChar(char* str, char ch)
 {
-
 	int i = 0;
 	while (str[i])
 	{

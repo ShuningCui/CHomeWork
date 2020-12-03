@@ -6,7 +6,7 @@
 输入：两个字符串和一个正整数。
 输出：1、 - 1或0。
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

@@ -13,9 +13,10 @@ typedef struct _PhoneList
 {
 	char name[30];
 	char phoneNum[20];
-}PhoneList;
+} PhoneList;
 
 void PhoneBubble(PhoneList* plist, int n);
+
 int main()
 {
 	PhoneList plist[100];

@@ -1,9 +1,22 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include "FunctionList.h"
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	return 0;
+}
+
+
+
 /// <summary>
 /// 将x反转，如123反转位321
 /// </summary>
 /// <param name="x">带反转的数</param>
 /// <returns>发转后的结果</returns>
-int resverse(int x)
+int Resverse(int x)
 {
 	int resx = 0;
 	while (x)
@@ -30,6 +43,7 @@ int IsPrime(int x)
 	}
 	return 1;
 }
+
 /// <summary>
 /// 冒泡排序
 /// </summary>
@@ -50,6 +64,7 @@ void Bubble(int* a, int n)
 		}
 	}
 }
+
 /// <summary>
 /// 删除字符串中指定的字符
 /// </summary>
@@ -59,7 +74,6 @@ void Bubble(int* a, int n)
 
 char* DelChar(char* str, char ch)
 {
-
 	int i = 0;
 	while (str[i])
 	{
@@ -80,7 +94,6 @@ char* DelChar(char* str, char ch)
 	}
 	return str;
 }
-
 
 
 /// <summary>
@@ -110,7 +123,7 @@ int Search(char* str, char ch)
 /// <param name="x">替换的字母</param>
 /// <param name="n">替换值</param>
 /// <returns>替换后的字母,如果x不是字母，则返回x</returns>
-char ReplaceChar(char x, int n)
+char ShiftChar(char x, int n)
 {
 	if ('A' <= x && x <= 'Z')
 	{
@@ -156,7 +169,6 @@ int IsDifferent(int x)
 			{
 				return 0;
 			}
-
 		}
 	}
 	return 1;
@@ -231,10 +243,10 @@ int IsPalindrome(int n)
 /// </summary>
 /// <param name="str">待反转的字符串</param>
 /// <returns>反转后的字符串</returns>
-char* strrev(char* str)
+char* MyStrrev(char* str)
 {
-	int j = strlen(str);   //the length of string
-	for (int i = 0; i < j / 2; i++)  //swap head and tail
+	int j = strlen(str); //the length of string
+	for (int i = 0; i < j / 2; i++) //swap head and tail
 	{
 		char t = str[i];
 		str[i] = str[j - i - 1];
@@ -281,18 +293,18 @@ char* IntToString(char* num, int n, int radix)
 	while (n)
 	{
 		int m = n % radix;
-		if (0 <= m && m <= 9)  //convert it to ASCII code
+		if (0 <= m && m <= 9) //convert it to ASCII code
 		{
 			num[i++] = m + '0';
 		}
-		else   //convert it to 'A'-'F' over 10
+		else //convert it to 'A'-'F' over 10
 		{
 			num[i++] = m - 10 + 'A';
 		}
 		n = n / radix; //the next number
 	}
 	num[i] = 0;
-	strrev(num);  //reverse the string
+	_strrev(num); //reverse the string
 	return num;
 }
 
@@ -300,7 +312,7 @@ char* IntToString(char* num, int n, int radix)
 /// <summary>
 /// 将一个字符串按指定字符分隔为若干字符串存储到二维数组中
 /// Separate a string into several strings according
-/// to the specified charactersand
+/// to the specified characters and
 /// store them in a two - dimensional array
 /// </summary>
 /// <param name="split">the 2-D array stored the substrings
@@ -311,24 +323,24 @@ char* IntToString(char* num, int n, int radix)
 
 int SplitString(char split[][100], char* str, char x)
 {
-	RomoveCharAtEnd(str, x);
-	RomoveCharAtBegin(str, x);
+	RemoveCharAtEnd(str, x);
+	RemoveCharAtBegin(str, x);
 	int sum = 0;
 	int i = 0;
 	int j = 0;
 	while (str[i])
 	{
-		if (str[i] == x)  //meet the separated character
+		if (str[i] == x) //meet the separated character
 		{
-			split[sum][j] = 0;  //the end of this line
+			split[sum][j] = 0; //the end of this line
 			sum++;
 			j = 0;
-			while (str[i++] == x);  //skip consecutive separators
+			while (str[i++] == x); //skip consecutive separators
 			i--;
 		}
 		else
 		{
-			split[sum][j++] = str[i++];  //copy to the 2-D array
+			split[sum][j++] = str[i++]; //copy to the 2-D array
 		}
 	}
 	split[sum][j] = 0;

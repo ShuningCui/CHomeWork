@@ -11,7 +11,7 @@
 
 int ack(int m, int n);
 
-int main() 
+int main()
 {
 	int m, n;
 	scanf("%d%d", &m, &n);
@@ -19,15 +19,15 @@ int main()
 	return 1;
 }
 
-int ack(int m, int n) 
+int ack(int m, int n)
 {
-	if (m == 0) 
+	if (m == 0)
 	{
-		return  n + 1;
+		return n + 1;
 	}
-	if (n == 0) 
+	if (n == 0)
 	{
-		return  ack(m - 1, 1);
+		return ack(m - 1, 1);
 	}
 	return ack(m - 1, ack(m, n - 1));
 }

@@ -13,10 +13,10 @@
 int main()
 {
 	char inputStr[200];
-	char t[200] = { 0 };
+	char t[200] = {0};
 	(void)scanf("%s", inputStr);
-	
-	int i = 0, j = 0;  //2个数组的下标指示
+
+	int i = 0, j = 0; //2个数组的下标指示
 	while (inputStr[i])
 	{
 		if (i % 2 == 1 && inputStr[i] % 2 == 1)

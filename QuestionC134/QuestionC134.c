@@ -6,6 +6,7 @@ double fun(int a[], int n, int* max, int* min);
 第三个数字为数组元素的平均值（保留小数点后6位有效数字)。3个数用空格分开。
 */
 
+#define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
 
@@ -15,10 +16,10 @@ int main()
 {
 	int n;
 	int a[100];
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	for (int i = 0; i < n; i++)
 	{
-		scanf("%d", &a[i]);
+		(void)scanf("%d", &a[i]);
 	}
 	int max;
 	int min;
@@ -26,15 +27,16 @@ int main()
 	printf("%d %d %lf", max, min, average);
 	return 0;
 }
+
 double fun(int a[], int n, int* max, int* min)
 {
-	double sum = 0;    //求和
+	double sum = 0; //求和
 	*max = *min = a[0]; //最大最小
 
 	for (int i = 0; i < n; i++)
 	{
 		sum += a[i];
-		if (a[i] > * max)
+		if (a[i] > *max)
 		{
 			*max = a[i];
 		}

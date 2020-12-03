@@ -1,17 +1,20 @@
 /*找出m到n之间的所有同构数（m < n）。
-说明：一个正整数x，如果是它平方数的尾部，则称x为同构数。
-例如，6是其平方数36的尾部，2
-5是其平方数625的尾部，那么6和25都是同构数。
-输入：
-输入m和n两个正整数，用空格分隔。
-输出：
-连续输出同构数，数据间用空格分隔。
+*说明：一个正整数x，如果是它平方数的尾部，则称x为同构数。
+*例如，6是其平方数36的尾部，2
+*5是其平方数625的尾部，那么6和25都是同构数。
+*输入：
+*输入m和n两个正整数，用空格分隔。
+*输出：
+*连续输出同构数，数据间用空格分隔。
+* 
+* Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
 #include<math.h>
+
 /*
 int IsomorphicNumber(int x, int xx);
 int main()
@@ -62,18 +65,16 @@ int main()
 	int firstNum = 0;
 	for (int i = m; i <= n; i++)
 	{
-		int digi = log10(i) + 1;  //求i的位数
+		//Find the number of digits of i
+		//求i的位数
+		int digi = (int)log10(i) + 1;
+		//Determine whether i is an isomorphic number
+		//判断i是否是同构数
 		if ((i * i) % (int)pow(10, digi) == i)
 		{
-			if (firstNum == 0)  //是否是输出的第一个数
-			{
-				printf("%d", i);
-				firstNum++;
-			}
-			else
-			{
-				printf(" %d", i);
-			}
+			//Is the first number?
+			//是否是输出的第一个数
+			firstNum++ == 0 ? printf("%d", i) : printf(" %d", i);
 		}
 	}
 }

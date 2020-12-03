@@ -1,9 +1,9 @@
 /*输入整数a和b，
 *若a* a + b * b大于等于100，
 *则输出a * a + b * b百位及以上的数字，
-否则输出a * a + b * b。
+*否则输出a * a + b * b。
 
-cuishuning 2020/11
+* Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

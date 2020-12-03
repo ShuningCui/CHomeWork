@@ -9,7 +9,7 @@
 样例输出：
 1 3
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 
@@ -20,7 +20,7 @@ cuishuning 2020/11
 int main()
 {
 	int a[100], b[100];
-	int an, bn;   //a和b中的元素个数
+	int an, bn; //a和b中的元素个数
 	(void)scanf("%d", &an);
 
 	for (int i = 0; i < an; i++)
@@ -34,8 +34,8 @@ int main()
 		(void)scanf("%d", &b[i]);
 	}
 
-	int ab[100];  //挑出的数放到ab中
-	int abn = 0;  //挑出数的个数
+	int ab[100]; //挑出的数放到ab中
+	int abn = 0; //挑出数的个数
 
 	for (int i = 0; i < an; i++)
 	{

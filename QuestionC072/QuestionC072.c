@@ -29,11 +29,11 @@ int main()
 	(void)scanf("%[^\n]%*c%c", inputStr, &delCh);
 	//上述scanf语句等价于：
 	//gets(inputStr);
-    //getchar();
+	//getchar();
 	//delCh=getchar();
 
 	printf("%s",
-		DelSomeChar(inputStr,delCh) == 0 ? "NotFound" : inputStr);
+	       DelSomeChar(inputStr, delCh) == 0 ? "NotFound" : inputStr);
 	return 0;
 }
 
@@ -46,7 +46,6 @@ int main()
 
 int DelSomeChar(char* str, char ch)
 {
-
 	int i = 0;
 	int sum = 0;
 	while (str[i])
@@ -69,4 +68,3 @@ int DelSomeChar(char* str, char ch)
 	}
 	return sum;
 }
-

@@ -5,7 +5,7 @@
 输入：正整数m, n, m, n > 1.
 输出：[m, n]中的孪生的数量
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

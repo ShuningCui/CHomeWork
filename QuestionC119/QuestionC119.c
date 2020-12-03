@@ -2,7 +2,7 @@
 如果输入的字符串中含有1和0以外的字符，则输出“该字符串不是正确的IP地址”。
 输入：0、1二进制序列，不会超过32位，位数不足时程序自动在前面补0
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -13,11 +13,11 @@ cuishuning 2020/11
 int main()
 {
 	char inputStr[33];
-	char checkedStr[33] = { 0 };
+	char checkedStr[33] = {0};
 	(void)scanf("%s", inputStr);
 	//将输入的字符串检查后copy到checkedStr数组
 	//从最后一位开始，高位不足补0；
-	int m = strlen(inputStr)-1;
+	int m = strlen(inputStr) - 1;
 	int n = 31;
 
 	while (m >= 0)
@@ -32,7 +32,7 @@ int main()
 			return 0;
 		}
 	}
-	while (n >= 0)  //高位不足补0
+	while (n >= 0) //高位不足补0
 	{
 		checkedStr[n--] = '0';
 	}
@@ -41,7 +41,7 @@ int main()
 	for (int i = 0; i < 4; i++)
 	{
 		int ip = 0;
-		int right = 128;  //2的7次方
+		int right = 128; //2的7次方
 		for (int j = i * 8; j < i * 8 + 8; j++)
 		{
 			ip = ip + (checkedStr[j] - '0') * right;

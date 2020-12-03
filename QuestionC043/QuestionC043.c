@@ -3,7 +3,7 @@
 *输入：3个小数，空格分隔；
 *输出：和，四舍五入后的整数，1行显示，空格分隔
 * 
-* cuishuning 2020/11
+* Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

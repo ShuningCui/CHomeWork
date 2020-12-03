@@ -3,7 +3,7 @@
 输入：两个数组的元素（小于10个），数组中第一个数据指示元素的个数.
 输出：两个数组的元素中非共有的元素, 并且从小到大进行排序.
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -11,7 +11,7 @@ cuishuning 2020/11
 #include<stdio.h>
 
 
-int NumInput(int num[]);  //输入数据到数组中，返回输入数据的个数
+int NumInput(int num[]); //输入数据到数组中，返回输入数据的个数
 int FindNoAltogether(int a[], int b[], int na, int nb, int c[], int nc);
 void Bubble(int b[], int n);
 
@@ -19,7 +19,7 @@ int main()
 {
 	int num01[30];
 	int num02[30];
-	int nNum01, nNum02, nNoAltogether;  //数组数据个数
+	int nNum01, nNum02, nNoAltogether; //数组数据个数
 	int noAltogether[30];
 	nNum01 = NumInput(num01);
 	nNum02 = NumInput(num02);
@@ -74,13 +74,13 @@ int FindNoAltogether(int a[], int b[], int na, int nb, int c[], int nc)
 		int flag = 0;
 		for (int j = 0; j < nb; j++)
 		{
-			if (a[i] == b[j])   //有重复的则跳出循环
+			if (a[i] == b[j]) //有重复的则跳出循环
 			{
 				flag = 1;
 				break;
 			}
 		}
-		if (!flag)  //找到没有重复的
+		if (!flag) //找到没有重复的
 		{
 			c[nc + n] = a[i];
 			n++;

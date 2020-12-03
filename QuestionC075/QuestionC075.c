@@ -15,11 +15,11 @@ char* DelChar(char* str, char ch);
 int main()
 {
 	char inStr[100];
-	gets_s(inStr,100);
+	gets_s(inStr, 100);
 	DelChar(inStr, ' ');
-	
+
 	StrBubble(inStr);
-		
+
 	printf("%c", inStr[0]);
 	for (int i = 1; i < strlen(inStr); i++)
 	{
@@ -54,7 +54,6 @@ void StrBubble(char* a)
 
 char* DelChar(char* str, char ch)
 {
-
 	int i = 0;
 	while (str[i])
 	{

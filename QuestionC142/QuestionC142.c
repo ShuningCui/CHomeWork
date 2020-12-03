@@ -17,7 +17,7 @@ typedef struct _frac
 {
 	int numerator; //·Ö×Ó
 	int denominator; //·ÖÄ¸
-}Frac;
+} Frac;
 
 Frac Add(Frac x, Frac y);
 int Gcd(int x, int y);
@@ -25,7 +25,7 @@ int Gcd(int x, int y);
 int main()
 {
 	int n;
-	Frac sum = { 0,1 };
+	Frac sum = {0, 1};
 	Frac x;
 	scanf("%d", &n);
 	char ch;
@@ -53,7 +53,7 @@ int main()
 			sum.numerator = sum.numerator
 				- sum.denominator * integer;
 			printf("%d %d/%d", integer, sum.numerator
-				, sum.denominator);
+			       , sum.denominator);
 		}
 		else
 		{

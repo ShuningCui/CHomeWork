@@ -24,4 +24,3 @@ int main()
 	printf("%s", strcmp(str, _strrev(revStr)) == 0 ? "YES" : "NO");
 	return 0;
 }
-

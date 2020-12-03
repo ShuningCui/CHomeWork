@@ -2,7 +2,7 @@
 输入：m, n
 输出：n个素数，数据间以一个空格分隔。
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

@@ -6,12 +6,12 @@ A用D代替，x用a代替，y用b代替，保持大小写不变。
 输入：一个字符串和非负整数k
 输出：加密的字符串。
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
 
-char ReplaceChar(char x, int n);
+char ShiftChar(char x, int n);
 
 #include<stdio.h>
 
@@ -23,7 +23,7 @@ int main()
 	int i = 0;
 	while (str[i])
 	{
-		str[i++] = ReplaceChar(str[i], n);
+		str[i++] = ShiftChar(str[i], n);
 	}
 
 	printf("%s", str);
@@ -37,7 +37,7 @@ int main()
 /// <param name="x">替换的字母</param>
 /// <param name="n">替换值</param>
 /// <returns>替换后的字母,如果x不是字母，则返回x</returns>
-char ReplaceChar(char x, int n)
+char ShiftChar(char x, int n)
 {
 	if ('A' <= x && x <= 'Z')
 	{

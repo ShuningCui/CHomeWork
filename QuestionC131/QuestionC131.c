@@ -13,7 +13,7 @@ typedef struct min
 {
 	int min;
 	int minPosition;
-}MinPos;
+} MinPos;
 
 MinPos Find(int* a, int n);
 
@@ -24,7 +24,7 @@ int main()
 	{
 		scanf("%d", &a[i]);
 	}
-	
+
 	MinPos minPos = Find(a, 10);
 	printf("%d %d", minPos.min, minPos.minPosition);
 	return 0;
@@ -32,7 +32,7 @@ int main()
 
 MinPos Find(int* a, int n)
 {
-	MinPos minPos = { a[0],0 };
+	MinPos minPos = {a[0], 0};
 	for (int i = 1; i < n; i++)
 	{
 		if (a[i] < minPos.min)

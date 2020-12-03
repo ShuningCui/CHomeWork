@@ -2,7 +2,7 @@
 输入：一个整数。
 输出：一个整数。
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

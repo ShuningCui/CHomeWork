@@ -7,14 +7,17 @@ abcdefghijklmn
 nmlkjihgfedcba
 */
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #include<stdio.h>
+#include<string.h>
 
 char* mystrrev(char* str);
 
 int main()
 {
 	char str[200];
-	scanf("%[^\n]", str);
+	(void)scanf("%[^\n]", str);
 	printf("%s", mystrrev(str));
 	return 0;
 }
@@ -27,8 +30,8 @@ int main()
 /// <returns>反转后的字符串</returns>
 char* mystrrev(char* str)
 {
-	int j = strlen(str);   //the length of string
-	for (int i = 0; i < j / 2; i++)  //swap head and tail
+	int j = strlen(str); //the length of string
+	for (int i = 0; i < j / 2; i++) //swap head and tail
 	{
 		char t = str[i];
 		str[i] = str[j - i - 1];
@@ -36,4 +39,3 @@ char* mystrrev(char* str)
 	}
 	return str;
 }
-

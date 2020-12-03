@@ -13,8 +13,10 @@ two three four
 
 int main()
 {
-	const char word[][30] = { "zero","one","two","three",
-	"four","five","six","seven","eight","nine" };
+	const char word[][30] = {
+		"zero", "one", "two", "three",
+		"four", "five", "six", "seven", "eight", "nine"
+	};
 	char inStr[100];
 	scanf("%s", inStr);
 	printf("%s", word[inStr[0] - '0']);
@@ -24,5 +26,3 @@ int main()
 	}
 	return 0;
 }
-
-

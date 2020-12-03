@@ -3,7 +3,7 @@
 所以它们也是绝对素数。输入1个两位正整数，
 判断其是否为绝对素数。如果是，则输出YES，否则输出NO。
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

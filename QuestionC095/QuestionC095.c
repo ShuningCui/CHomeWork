@@ -7,7 +7,7 @@
 说明：
 如果有多个同等长度的等值数列，只输出第一个等值数列的起止下标。
 
-cuishuning 2020/11
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -24,12 +24,12 @@ int main()
 		(void)scanf("%d", &a[i]);
 	}
 
-	int maxStart = 0;  //当前最大起始下标
-	int maxEnd = 0;    //当前最大结束下标
-	int maxLength = 0;  //当前最大长度
-	int start = 0;   //当前起始下标
-	int end = 0;    //当前起始下标
-	int length = 0;   //当前长度
+	int maxStart = 0; //当前最大起始下标
+	int maxEnd = 0; //当前最大结束下标
+	int maxLength = 0; //当前最大长度
+	int start = 0; //当前起始下标
+	int end = 0; //当前起始下标
+	int length = 0; //当前长度
 
 	int i = 0;
 	while (i < n)
