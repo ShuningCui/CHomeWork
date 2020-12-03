@@ -20,7 +20,7 @@ int main()
 	int a[NUM];
 	for (int i = 0; i < NUM; i++)
 	{
-		scanf("%d", &a[i]);
+		(void)scanf("%d", &a[i]);
 	}
 	BubbleSort(a, NUM);
 	for (int i = 0; i < NUM; i++)

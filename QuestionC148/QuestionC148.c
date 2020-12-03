@@ -6,6 +6,7 @@ Cui Shuning (´ÞÊæÄþ£©2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4267)
 
 #include<stdio.h>
 #include<string.h>
@@ -16,7 +17,7 @@ int main()
 {
 	char low[100];
 	char inStr[200];
-	scanf("%s", inStr);
+	(void)scanf("%s", inStr);
 	int i = 0;
 	int j = 0;
 	while (inStr[i])

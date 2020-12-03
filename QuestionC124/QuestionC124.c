@@ -25,10 +25,10 @@ int main()
 {
 	GradeList glist[100];
 	int n;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	for (int i = 0; i < n; i++)
 	{
-		scanf("%s%s%d%d%d",
+		(void)scanf("%s%s%d%d%d",
 		      glist[i].id, glist[i].name, &glist[i].course01,
 		      &glist[i].course02, &glist[i].course03);
 		glist[i].total = glist[i].course01 + glist[i].course02 + glist[i].course03;

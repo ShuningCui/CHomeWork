@@ -18,7 +18,7 @@ int f(int n);
 int main()
 {
 	int n, s;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	s = f(n);
 	printf("%d\n", s);
 	return 0;

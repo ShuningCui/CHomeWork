@@ -18,13 +18,13 @@ int main()
 	int a[20] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 	int b[10];
 	int n;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	for (int i = 0; i < n; i++)
 	{
-		scanf("%d", &b[i]);
+		(void)scanf("%d", &b[i]);
 	}
 	int k;
-	scanf("%d", &k);
+	(void)scanf("%d", &k);
 
 	printf("%d", a[0]); //输出第一个数
 	//输出前k个数

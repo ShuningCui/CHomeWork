@@ -6,13 +6,14 @@ Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4267)
 
 #include<stdio.h>
 #include<string.h>
 
 int main()
 {
-	char inputStr[33];
+	char inputStr[33] = { 0 };
 	char checkedStr[33] = {0};
 	(void)scanf("%s", inputStr);
 	//将输入的字符串检查后copy到checkedStr数组

@@ -10,6 +10,7 @@ Cui Shuning (´ÞÊæÄþ£©2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4267)
 
 #include<stdio.h>
 #include<string.h>
@@ -37,7 +38,7 @@ int main()
 		printf("NO");
 		return 0;
 	}
-	int num[100];
+	int num[100] = { 0 };
 	int sum = 0;
 	for (int i = 0; i < m; i++)
 	{

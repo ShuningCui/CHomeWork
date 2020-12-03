@@ -16,7 +16,7 @@ int ack(int m, int n);
 int main()
 {
 	int m, n;
-	scanf("%d%d", &m, &n);
+	(void)scanf("%d%d", &m, &n);
 	printf("ack(%d,%d)=%d\r\n", m, n, ack(m, n));
 	return 1;
 }

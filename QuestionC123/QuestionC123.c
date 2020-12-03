@@ -21,10 +21,10 @@ int main()
 {
 	PhoneList plist[100];
 	int n;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	for (int i = 0; i < n; i++)
 	{
-		scanf("%s%s", plist[i].name, plist[i].phoneNum);
+		(void)scanf("%s%s", plist[i].name, plist[i].phoneNum);
 	}
 	PhoneBubble(plist, n);
 

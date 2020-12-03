@@ -21,7 +21,7 @@ int main()
 	char in[500];
 	char matchStr[20];
 
-	scanf("%s%s", in, matchStr);
+	(void)scanf("%s%s", in, matchStr);
 	int sum = 0;
 	int i = 0;
 	int j = 0;

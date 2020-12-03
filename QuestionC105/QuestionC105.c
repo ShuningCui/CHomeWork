@@ -18,7 +18,7 @@ int main()
 	char word[5][100];
 	for (int i = 0; i < 5; i++)
 	{
-		scanf("%s", word[i]);
+		(void)scanf("%s", word[i]);
 	}
 	BubbleWord(word, 5);
 	printf("max:%s min:%s\n", word[4], word[0]);

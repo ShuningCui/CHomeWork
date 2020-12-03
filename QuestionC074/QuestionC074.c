@@ -35,7 +35,7 @@ int main()
 		count[i].c = 0;
 	}
 	char input[100];
-	scanf("%[^\n]", input);
+	(void)scanf("%[^\n]", input);
 	_strupr(input); //×ªÎª´óĞ´×ÖÄ¸
 
 	int i = 0;

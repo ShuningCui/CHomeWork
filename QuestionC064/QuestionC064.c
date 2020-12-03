@@ -20,7 +20,7 @@ int main()
 		"four", "five", "six", "seven", "eight", "nine"
 	};
 	char inStr[100];
-	scanf("%s", inStr);
+	(void)scanf("%s", inStr);
 	printf("%s", word[inStr[0] - '0']);
 	for (int i = 1; i < strlen(inStr); i++)
 	{

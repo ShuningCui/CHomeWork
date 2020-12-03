@@ -14,7 +14,7 @@ Cui Shuning (崔舒宁）2020/11
 int main()
 {
 	char in[200];
-	scanf("%s", in);
+	(void)scanf("%s", in);
 	//初始时假设出现最多次数的字符是第一个字符
 	char maxch = in[0];
 	int maxi = 0; //出现次数做多的下标

@@ -12,13 +12,14 @@ Cui Shuning (´ÞÊæÄþ£©2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4267)
 
 #include<stdio.h>
 #include<string.h>
 
 int main()
 {
-	char str[100];
+	char str[100] = { 0 };
 	(void)scanf("%s", str);
 	int maxi = strlen(str) - 1;
 	printf("%s", str + maxi);

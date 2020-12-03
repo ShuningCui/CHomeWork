@@ -23,10 +23,10 @@ int main()
 {
 	Record record[30];
 	int m;
-	scanf("%d", &m);
+	(void)scanf("%d", &m);
 	for (int i = 0; i < m; i++)
 	{
-		scanf("%s%s%s", record[i].name, record[i].inTime
+		(void)scanf("%s%s%s", record[i].name, record[i].inTime
 		      , record[i].outTime);
 	}
 

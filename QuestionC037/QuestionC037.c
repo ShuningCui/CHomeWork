@@ -15,7 +15,7 @@ void Bubble(int* a, int n);
 int main()
 {
 	int n;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	n = n * 3;
 	printf("%d,", n);
 	int num[30];

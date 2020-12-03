@@ -29,11 +29,11 @@ int main()
 	int n;
 	Frac sum = {0, 1};
 	Frac x;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	char ch;
 	for (int i = 0; i < n; i++)
 	{
-		scanf("%d%c%d", &x.numerator, &ch, &x.denominator);
+		(void)scanf("%d%c%d", &x.numerator, &ch, &x.denominator);
 		sum = Add(sum, x);
 	}
 

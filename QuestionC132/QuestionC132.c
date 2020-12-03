@@ -17,7 +17,7 @@ void fun(int n, char res[]);
 int main()
 {
 	int n;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	char res[20];
 	fun(n, res);
 	printf("%s", res);

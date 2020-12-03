@@ -8,6 +8,7 @@ Cui Shuning (´ÞÊæÄþ£©2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4267)
 
 #include<stdio.h>
 #include<string.h>

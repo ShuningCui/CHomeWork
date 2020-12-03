@@ -14,10 +14,10 @@ int main()
 {
 	int n;
 	int a[100];
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	for (int i = 0; i < 2 * n; i++)
 	{
-		scanf("%d", &a[i]);
+		(void)scanf("%d", &a[i]);
 	}
 	//ÆæÊýÃ°ÅÝ
 	for (int i = 1; i < 2 * n - 1; i += 2)

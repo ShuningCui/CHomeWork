@@ -11,6 +11,7 @@ Cui Shuning (´ÞÊæÄþ£©2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4267)
 
 #include<stdio.h>
 #include<string.h>
@@ -23,7 +24,7 @@ int main()
 	char s[100];
 	char t[100];
 	char u[200] = {0};
-	scanf("%s%s", s, t);
+	(void)scanf("%s%s", s, t);
 	_strupr(s);
 	_strupr(t);
 	StrMerge(s, u);

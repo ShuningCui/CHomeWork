@@ -7,14 +7,15 @@ Cui Shuning (´ÞÊæÄþ£©2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4267)
 
 #include<stdio.h>
 #include<string.h>
 
 int main()
 {
-	char inputStr[200];
-	scanf("%s", inputStr);
+	char inputStr[200] = { 0 };
+	(void)scanf("%s", inputStr);
 
 	int i = 1;
 	int j = strlen(inputStr) - 1;

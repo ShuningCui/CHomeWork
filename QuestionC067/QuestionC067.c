@@ -17,7 +17,7 @@ Cui Shuning (´ÞÊæÄþ£©2020/11
 int main()
 {
 	int n;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 
 	char num[200];
 	int i = 0;

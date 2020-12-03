@@ -23,7 +23,7 @@ int main()
 	WordCount wordCount[100];
 	char inStr[30];
 	int n = 0;
-	scanf("%s", inStr);
+	(void)scanf("%s", inStr);
 	while (strcmp(inStr, "###"))
 	{
 		int flag = 0; // «∑Ò÷ÿ∏¥
@@ -42,7 +42,7 @@ int main()
 			strcpy(wordCount[n].word, inStr);
 			wordCount[n++].count = 1;
 		}
-		scanf("%s", inStr);
+		(void)scanf("%s", inStr);
 	}
 
 	// ‰≥ˆ

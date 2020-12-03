@@ -15,11 +15,11 @@ void Bubble(int a[], int n);
 int main()
 {
 	int n;
-	scanf("%d", &n);
+	(void)scanf("%d", &n);
 	int a[100] = {0};
 	for (int i = 0; i < n; i++)
 	{
-		scanf("%d", &a[i]);
+		(void)scanf("%d", &a[i]);
 	}
 	Bubble(a, n);
 	int min = a[0];

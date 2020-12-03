@@ -6,6 +6,7 @@
 
 
 #define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4267)
 
 #include<stdio.h>
 #include<string.h>
@@ -14,8 +15,8 @@ void StrBubbleBetween(char* str, int begin, int end);
 
 int main()
 {
-	char inStr[200];
-	scanf("%s", inStr);
+	char inStr[200] = { 0 };
+	(void)scanf("%s", inStr);
 	StrBubbleBetween(inStr, 1, strlen(inStr) - 2);
 	printf("%s", inStr);
 	return 0;
