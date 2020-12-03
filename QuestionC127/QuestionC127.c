@@ -4,6 +4,8 @@ poly(n, x) = x, 当 n = 1；
 poly(n, x) = ((2 * n - 1) * x * poly(n - 1, x) - (n - 1) * poly(n - 2, x)) / n, 当 n > 1；
 输入：n和x，格式："%d%lf"。
 输出：第n个多项式在x处的值，格式："%lf\n"。
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 

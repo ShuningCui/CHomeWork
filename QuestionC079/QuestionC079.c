@@ -5,6 +5,8 @@ char* mystrrev(char string[]);
 ÑùÀý£º
 abcdefghijklmn
 nmlkjihgfedcba
+
+Cui Shuning (´ÞÊæÄþ£©2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

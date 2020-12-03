@@ -4,6 +4,8 @@ void fun(int n, char res[]);
 输入输出格式：
 输入：一个整数(整数数位不超过15位)。
 输出：逆序后的值。
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

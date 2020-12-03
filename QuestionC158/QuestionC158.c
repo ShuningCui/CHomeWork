@@ -4,6 +4,8 @@
 则结果字符串为：aehcret。
 输入格式：长度小于100的字符串，
 输出：奇数位置的字符排序后的字符串
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

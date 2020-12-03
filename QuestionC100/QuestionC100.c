@@ -3,6 +3,8 @@
 输入一行：字符串。 
 输出一行：改变后的字符串； 
 若没有空格，则输出字符串“NotFound”。
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

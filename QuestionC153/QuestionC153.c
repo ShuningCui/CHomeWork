@@ -2,6 +2,8 @@
 将序号为偶数的数从大到小排序。n不超过12。
 输入：整数n和2n个整数。
 输出：按要求的排序结果，数间以空格隔开。
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

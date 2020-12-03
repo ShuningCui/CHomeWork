@@ -2,6 +2,8 @@
 输入：若干整数，最后一个数是 - 1。（输入的每个数之间有空格）
 输出：四个整数，以空格隔开，代表三个人的Li、Zhang、Wang的得票数以及废票数。
 输出格式："%d %d %d %d\n"
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

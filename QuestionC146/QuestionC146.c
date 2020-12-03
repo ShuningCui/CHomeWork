@@ -6,6 +6,8 @@
 则u = " AEGIMNSTY"。s, t长度不超过100。
 输入：两个字符串中间用空格隔开
 输出：结果字符串，按ASCII排序。
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

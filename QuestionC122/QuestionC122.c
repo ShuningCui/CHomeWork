@@ -2,6 +2,8 @@
 当m = 0时，ack(0, n) = n + 1
 当n = 0时，ack(m, 0) = ack(m - 1, 1)
 其它情况下，ack(m, n) = ack(m - 1, ack(m, n - 1))
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

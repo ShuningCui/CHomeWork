@@ -4,6 +4,8 @@
 若两个字符串是challenge和put, 
 则输出为cphuatllenge。字符的长度不超过100。
 输入字符串间以空格分隔。
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

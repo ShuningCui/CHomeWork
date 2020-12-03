@@ -4,6 +4,8 @@
 （3）当 n > 4 且n为奇数 时， f(n) = f(n - 2) + f(n - 4)
 （4）n为其它值时， f(n) = -1
 输入自变量n，输出函数结果。
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

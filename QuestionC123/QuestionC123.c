@@ -2,7 +2,7 @@
 //按姓名的字典顺序排列后，
 //输出用户的姓名和电话号码，n从键盘输入。
 //
-//Cui Shuning 2020/11
+//Cui Shuning (崔舒宁）2020/11
 
 #define _CRT_SECURE_NO_WARNINGS
 

@@ -1,6 +1,9 @@
 /*编写冒泡排序函数，函数原型：void BubbleSort(int a[], int n); 对n个整数升序排序。
 编写选择排序函数，函数原型：void SelectionSort(int a[], int n); 对n个整数降序排序。
-编写main函数，输入10个整数，利用函数将其按升序和降序分别输出排序结果。（输入输出数据间用一个空格分隔）
+编写main函数，输入10个整数，利用函数将其按升序和降序分别输出排序结果。
+（输入输出数据间用一个空格分隔）
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

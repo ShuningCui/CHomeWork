@@ -4,6 +4,8 @@ double fun(int a[], int n, int* max, int* min);
 输入：用户输入的n + 1个数，用空格分隔。第一个数为数组元素个数n。
 输出：3个数字：第一个数字为数组中的最大元素值，第二个数字为数组中的最小元素值，
 第三个数字为数组元素的平均值（保留小数点后6位有效数字)。3个数用空格分开。
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

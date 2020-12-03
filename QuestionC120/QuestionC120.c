@@ -3,6 +3,8 @@
 占一行（注：输入的字符串长度不会超过80）
 输出：
 占一行
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

@@ -2,6 +2,8 @@
 如字符12345678，结果为18365472
 输入：字符串，不含空格。
 输出：结果字符串。
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS

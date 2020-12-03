@@ -5,6 +5,8 @@
 插入完成后，输出数组a（元素间用空格隔开）。
 输入：整数n，n个整数，整数k。
 输出：数组a
+
+Cui Shuning (崔舒宁）2020/11
 */
 
 #define _CRT_SECURE_NO_WARNINGS
