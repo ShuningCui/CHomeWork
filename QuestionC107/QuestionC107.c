@@ -19,13 +19,12 @@ int main()
 {
 	int num01[30];
 	int num02[30];
-	int nNum01, nNum02, nNoAltogether; //数组数据个数
 	int noAltogether[30];
-	nNum01 = NumInput(num01);
-	nNum02 = NumInput(num02);
+	int nNum01 = NumInput(num01);
+	int nNum02 = NumInput(num02);
 
 	//查找在第一个数组中不在第二个数组中的数
-	nNoAltogether = FindNoAltogether(num01, num02, nNum01, nNum02, noAltogether, 0);
+	int nNoAltogether = FindNoAltogether(num01, num02, nNum01, nNum02, noAltogether, 0);
 	//查找在第二个数组中不在第一个数组中的数
 	nNoAltogether += FindNoAltogether(num02, num01, nNum02, nNum01, noAltogether, nNoAltogether);
 	//排序

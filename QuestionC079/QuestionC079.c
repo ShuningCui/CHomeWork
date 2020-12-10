@@ -1,5 +1,5 @@
 /*编写字符串反转函数，该函数将指定字符串中的字符左右顺序颠倒排列。该函数的原型为：
-char* mystrrev(char string[]);
+char* Mystrrev(char string[]);
 其中参数string是待反转的字符串，该函数的返回值为左右顺序颠倒后的字符串指针。
 编写主函数，对上述函数进行测试。
 样例：
@@ -15,13 +15,13 @@ Cui Shuning (崔舒宁）2020/11
 #include<stdio.h>
 #include<string.h>
 
-char* mystrrev(char* str);
+char* Mystrrev(char* str);
 
 int main()
 {
 	char str[200];
 	(void)scanf("%[^\n]", str);
-	printf("%s", mystrrev(str));
+	printf("%s", Mystrrev(str));
 	return 0;
 }
 
@@ -31,7 +31,7 @@ int main()
 /// </summary>
 /// <param name="str">待反转的字符串</param>
 /// <returns>反转后的字符串</returns>
-char* mystrrev(char* str)
+char* Mystrrev(char* str)
 {
 	int j = strlen(str); //the length of string
 	for (int i = 0; i < j / 2; i++) //swap head and tail

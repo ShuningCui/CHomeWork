@@ -13,7 +13,7 @@ Cui Shuning (崔舒宁）2020/11
 #include<stdio.h>
 #include<string.h>
 
-char* DelCharBtweenStr(char* str, int i, int j, char delch);
+char* DelCharBetweenStr(char* str, int i, int j, char delch);
 
 int main()
 {
@@ -32,11 +32,11 @@ int main()
 	{
 		j--;
 	}
-	printf("%s", DelCharBtweenStr(inputStr, i, j, ' '));
+	printf("%s", DelCharBetweenStr(inputStr, i, j, ' '));
 	return 0;
 }
 
-char* DelCharBtweenStr(char* str, int i, int j, char delch)
+char* DelCharBetweenStr(char* str, int i, int j, char delch)
 {
 	//删除i到j之间所有字符；
 	while (j >= i)
