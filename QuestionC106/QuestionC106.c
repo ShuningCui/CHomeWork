@@ -63,7 +63,8 @@ int main()
 		n = Compress(a, n);
 	}
 
-	printf("%d %d %d", a[0], a[1], a[2]);
+	n == 3 ? printf("%d %d %d", a[0], a[1], a[2])
+		: printf("%d %d", a[0], a[1]);
 	return 0;
 }
 
