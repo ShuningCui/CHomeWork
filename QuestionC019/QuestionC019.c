@@ -1,11 +1,21 @@
-/*输入一个正整数，求出它的质因子的和。
-*例如，12的质因子和为2 + 2 + 3 = 7。如果输入的是质数，直接显示0.
-*输入：正整数
-*输出：质因子的求和表达式。加号和等号是英文符号。
-
-* Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C019</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 输入一个正整数，求出它的质因子的和。
+/// 例如，12的质因子和为2 + 2 + 3 = 7。如果输入的是质数，直接显示0.
+/// </summary>
+/// <input>一个正整数</input>
+/// <output>质因子的求和表达式或者0</output>
+/// <sample>
+/// 7
+/// 0
+/// </sample>
+/// <sample>
+/// 22
+/// 2+11=13
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>03</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 

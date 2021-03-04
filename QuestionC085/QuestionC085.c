@@ -1,13 +1,17 @@
-/*输入字符串，字符串中有若干星号*, 去掉字符串首尾的星号（* ），保留中间的星号。 字符串长度不大于200.
-输入：带有* 号的字符串。
-输出：首尾不带* 号的字符串。
-样例：
-*** street** music****
-street** music
-
-Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C085</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 输入字符串，字符串中有若干星号*, 去掉字符串首尾的星号（* ），
+/// 保留中间的星号。 字符串长度不大于200
+/// </summary>
+/// <input>带有* 号的字符串</input>
+/// <output>首尾不带* 号的字符串</output>
+/// <sample>
+/// ***street**music****
+/// street**music
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>03</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4267)
 

@@ -1,9 +1,17 @@
-/*编程求以下级数前n项之和：
-*s = 1 - 1 / 3 + 1 / 5 - 1 / 7 + ...
-*
-*Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C012</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 编程求以下级数前n项之和：
+/// s = 1 - 1 / 3 + 1 / 5 - 1 / 7 + ...
+/// </summary>
+/// <input>1个正整数，级数的项数</input>
+/// <output>实数，和</output>
+/// <sample>
+/// 25
+/// 0.795394
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>02</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>

@@ -17,18 +17,18 @@ Cui Shuning (´ÞÊæÄþ£©2020/11
 #include<stdio.h>
 #include<string.h>
 
-int strSearch(char words[][30], int n, char word[]);
+int StrSearch(char words[][30], int n, char word[]);
 
 int main()
 {
 	char words[5][30] = {"reserve", "replace", "core", "nature", "literature"};
 	char word[30];
 	(void)scanf("%s", word);
-	printf("%s", strSearch(words, 5, _strlwr(word)) == -1 ? "NO" : "YES");
+	printf("%s", StrSearch(words, 5, _strlwr(word)) == -1 ? "NO" : "YES");
 	return 0;
 }
 
-int strSearch(char words[][30], int n, char word[])
+int StrSearch(char words[][30], int n, char word[])
 {
 	for (int i = 0; i < n; i++)
 	{

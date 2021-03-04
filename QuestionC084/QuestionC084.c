@@ -1,17 +1,17 @@
-/*输入两个字符串，统计第2个字符串（至少含2字符）
-在第1个字符串中出现的次数。没有出现，次数为0.
-输入：两个字符串，以空格分隔。
-输出：出现次数，整数。
-样例1：
-banana  an
-2
-样例2：
-bnnnn nn
-3
-
-Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C084</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 输入两个字符串，统计第2个字符串（至少含2字符）
+/// 在第1个字符串中出现的次数。没有出现，次数为0.
+/// </summary>
+/// <input>两个字符串，以空格分隔</input>
+/// <output>出现次数，整数</output>
+/// <sample>
+/// banana  an
+/// 2
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>03</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>

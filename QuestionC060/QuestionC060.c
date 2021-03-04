@@ -1,11 +1,20 @@
-/*输入若干个整数，其值在0至4的范围内，
-*用 - 1作为输入结束的标志，统计每个整数的个数。
-*输入：[0, 4]内的整数组成的序列，最后是 - 1，用空格隔开。
-*输出：0, 1, 2, 3, 4的统计个数，用一个空格隔开。
-
-* Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C060</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 输入若干个整数，其值在0至4的范围内，用 - 1作为输入结束的标志，统计每个整数的个数。
+/// </summary>
+/// <input>[0, 4]内的整数组成的序列，最后是 - 1，用空格隔开。</input>
+/// <output>0, 1, 2, 3, 4的统计个数，用一个空格隔开。</output>
+/// <sample>
+/// 0 0 -1
+/// 2 0 0 0 0
+/// </sample>
+/// <sample>
+/// 0 1 2 3 4 -1
+/// 1 1 1 1 1
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>02</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<math.h>

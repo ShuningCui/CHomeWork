@@ -1,23 +1,24 @@
-/*编写程序，输入字符串到字符数组s中，
-再输入一个字符给变量c，判断s中是否有c，
-若有则将该字符从s中删除后输出。若没有，则输出字符串“NotFound”。
-输入2行，1个字符串和1个字符：
-输出：删除后的字符串
-样例1：
-输入：
-smiles
-s
-输出：
-mile
-样例2：
-输入：
-smiles
-a
-输出：
-NotFound
-
-Cui Shuning (崔舒宁）2020/11
-*/
+/// <ID>C072</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 输入字符串到字符数组s中，
+/// 再输入一个字符给变量c，判断s中是否有c，
+/// 若有则将该字符从s中删除后输出。若没有，则输出字符串“NotFound”。
+/// </summary>
+/// <input>2行，1个字符串(包含空格）和1个字符（包含空格）</input>
+/// <output>删除后的字符串</output>
+/// <sample>
+/// she smiles
+/// s
+/// he mile
+/// </sample>
+/// <sample>
+/// she smiles
+/// x
+/// NotFound
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>03</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>

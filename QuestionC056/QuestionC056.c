@@ -1,10 +1,20 @@
-/*输入公元年份和月份，输出该月份的天数。
-*输入：年，月（逗号分隔）
-*输出：天数
-
-* Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C056</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 输入公元年份和月份，输出该月份的天数。
+/// </summary>
+/// <input>年，月（逗号分隔）</input>
+/// <output>天数</output>
+/// <sample>
+/// 2000,2
+/// 29
+/// </sample>
+/// <sample>
+/// 2001,2
+/// 28
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>02</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 

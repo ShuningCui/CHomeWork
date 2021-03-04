@@ -1,12 +1,17 @@
-/*将字符串首部的* 号全部移到字符串的尾部，
-中间若有* 号，保持中间的* 号不动。字符串长度不超过200.
-样例
-*** street***** music***
-street***** music******
-
-Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C088</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 将字符串首部的* 号全部移到字符串的尾部，
+/// 中间若有* 号，保持中间的* 号不动。字符串长度不超过200.
+/// </summary>
+/// <input>字符串</input>
+/// <output>移动后的结果</output>
+/// <sample>
+/// *** street***** music***
+/// street***** music******
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>02</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4267)
 

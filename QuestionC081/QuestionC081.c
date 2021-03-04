@@ -1,16 +1,18 @@
-/*编写程序，按下列规则倒序输出子字符串。
-先输出最后的一个字符，再输出最后两个字符串，
-在再出后面三个字符..., 最后输出整个字符串。
-输入的字符串长度不超过100。
-输入：一个字符串
-输出：空格隔开的子字符串，用一个空格间隔。
-输入输出样例：
-student
-t nt ent dent udent tudent student
-
-Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C081</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 编写程序，按下列规则倒序输出子字符串。
+/// 先输出最后的一个字符，再输出最后两个字符串，
+/// 在再出后面三个字符..., 最后输出整个字符串。
+/// </summary>
+/// <input>一个字符串</input>
+/// <output>空格隔开的子字符串，用一个空格间隔</output>
+/// <sample>
+/// student
+/// t nt ent dent udent tudent student
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>02</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4267)
 

@@ -1,12 +1,18 @@
-/*编写程序，要求在一个字符串中查找连续出现次数最多的一个字符，
-并显示其所在的开始下标和次数。
-(如果出现最多的字符不止一个，输出最靠前的字符)
-输入：一个字符串
-输出：出现最多的字符，次数，开始下标
-
-Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C077</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 编写程序，要求在一个字符串中查找连续出现次数最多的一个字符，
+/// 并显示其所在的开始下标和次数。
+/// (如果出现最多的字符不止一个，输出最靠前的字符)
+/// </summary>
+/// <input>一个字符串</input>
+/// <output>出现最多的字符，次数，开始下标</output>
+/// <sample>
+/// rmgkm1111111111rgregr94eg, tgh
+/// 1 10 5
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>02</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>

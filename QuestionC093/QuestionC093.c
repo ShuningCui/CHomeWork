@@ -1,11 +1,17 @@
-/*将字符串中奇数下标（从0开始）的字符顺序颠倒。
-如字符12345678，结果为18365472
-输入：字符串，不含空格。
-输出：结果字符串。
-
-Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C093</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 将字符串中奇数下标（从0开始）的字符顺序颠倒。
+/// 如字符12345678，结果为18365472
+/// </summary>
+/// <input>字符串，不含空格</input>
+/// <output>结果字符串</output>
+/// <sample>
+/// 12345678
+/// 18365472
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>03</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4267)
 

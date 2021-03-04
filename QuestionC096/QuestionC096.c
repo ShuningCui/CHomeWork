@@ -1,12 +1,18 @@
-/*输入一个长度不超过 100 的字符串，删除串中的重复字符。
-输入：
-输入要检查的字符串，长度不超过100个字符。例如：abacaeedabcdcd。
-输出：
-删除重复字符后的字符串。例如：abced。
-
-Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C096</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 输入一个长度不超过 100 的字符串，删除串中的重复字符。
+/// 输入要检查的字符串，长度不超过100个字符。例如：abacaeedabcdcd。
+/// 删除重复字符后的字符串。例如：abced。
+/// </summary>
+/// <input>一个字符串</input>
+/// <output>删除重复字符后的字符串</output>
+/// <sample>
+/// abacaeedabcdcd
+/// abced
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>03</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>

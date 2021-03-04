@@ -1,12 +1,16 @@
-/*编写函数，去掉一个字符串中除头部和尾部空格外的所有空格，并编写主函数进行调用测试。
-输入：
-占一行（注：输入的字符串长度不会超过80）
-输出：
-占一行
-
-Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C120</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 编写函数，去掉一个字符串中除头部和尾部空格外的所有空格，并编写主函数进行调用测试
+/// </summary>
+/// <input>输入的字符串长度不会超过200</input>
+/// <output>结果字符串</output>
+/// <sample>
+///      we5et et ewtew ter te   et     
+///      we5etetewtewterteet
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>03</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4267)
 

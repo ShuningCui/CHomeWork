@@ -1,13 +1,18 @@
-/*所谓孪生素数是指间隔为 2 的相邻素数，
-例如最小的孪生素数是3和5, 5和7也是孪生数。
-编写程序，求给定区间[m, n]中的孪生数的数量。
-例如[2, 10]中的孪生数有(3, 5)和(5, 7)，则[2, 10]中孪生数的数量为2.
-输入：正整数m, n, m, n > 1.
-输出：[m, n]中的孪生的数量
-
-Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C113</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 所谓孪生素数是指间隔为 2 的相邻素数，
+/// 例如最小的孪生素数是3和5, 5和7也是孪生数。
+/// 编写程序，求给定区间[m, n]中的孪生数的数量。
+/// </summary>
+/// <input>正整数m, n, m, n > 1.</input>
+/// <output>[m, n]中的孪生的数量</output>
+/// <sample>
+/// 2 10
+/// 2
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>03</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>

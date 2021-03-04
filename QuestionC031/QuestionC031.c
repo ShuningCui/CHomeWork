@@ -1,11 +1,17 @@
-/*求a + aa + aaa + aaaa + … + aa...a（n个），其中a为1～9之间的整数。
-*例如：当a = 1, n = 3时，求1 + 11 + 111之和为123；
-*输入：组成序列的数字a和求和项的数量n
-*输出：算式和结果。
-
-* Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C031</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 求a + aa + aaa + aaaa + … + aa...a（n个），其中a为1～9之间的整数
+/// 当a = 1, n = 3时，求1 + 11 + 111之和为123
+/// </summary>
+/// <input>组成序列的数字a和求和项的数量n</input>
+/// <output>和</output>
+/// <sample>
+/// 1 3
+/// 123
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>02</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
