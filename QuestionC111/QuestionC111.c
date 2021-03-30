@@ -1,14 +1,26 @@
-/*输入字母、数字和空格组成的字符串，
-提取字符串中的整数并输出，字符串中的非数字字符视为分割符。
-输出数据间以英文逗号分隔，末尾没有逗号。
-并换行输出其和值。若字符串中没有数据时，输出“NO”。输入的字符串长度不超过80。
-输入格式：占一行，输入字符串。
-输出格式：占两行。
-第一行：各数据间用一个英文逗号分隔，第二行：它们的和值。
-
-Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C111</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 输入一个带有空格的字符串（包含字母、数字、空格以及其他符号），
+/// 提取字符串中的数字转换为整数并输出，
+/// 字符串中的非数字字符视为分割符。
+/// 输出数据间以空格分隔，末尾没有空格，并换行输出所有整数的和值。若
+/// 字符串中没有任何数字时，输出“NO”。输入的字符串长度不超过80。 
+/// </summary>
+/// <input>1行字符串</input>
+/// <output>2行，第一行是转化的整数，第2行是所有整数的和</output>
+/// <sample>
+/// 2
+/// 1/2 1/2
+/// 1
+/// </sample>
+/// /// <sample>
+/// 3
+/// -1/2 -1/2 -1/2
+/// -1 1/2
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>03</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4267)
 
@@ -40,15 +52,15 @@ int main()
 	}
 	int num[100] = { 0 };
 	int sum = 0;
-	for (int i = 0; i < m; i++)
+	for (i = 0; i < m; i++)
 	{
 		num[i] = Convert(splitStr[i]);
 		sum += num[i];
 	}
 	printf("%d", num[0]);
-	for (int i = 1; i < m; i++)
+	for (i = 1; i < m; i++)
 	{
-		printf(",%d", num[i]);
+		printf(" %d", num[i]);
 	}
 	printf("\n%d", sum);
 	return 0;

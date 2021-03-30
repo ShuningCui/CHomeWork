@@ -1,15 +1,18 @@
-/*输入两个字符串s, t，
-按ASCII顺序输出在s或t中出现过(不区分大小写)的字符
-(全部转为大写输出)，
-重复的字符只出现一次。
-如s = "meeting" 和t = " sayING", 
-则u = " AEGIMNSTY"。s, t长度不超过100。
-输入：两个字符串中间用空格隔开
-输出：结果字符串，按ASCII排序。
-
-Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C111</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 输入两个字符串s, t，(字符串中没有空格，包含大小写字母、数字以及其他符号）
+/// 按从小到大顺序输出在s或t中出现过(不区分大小写)的所有字符，所有字母均按大写输出
+/// 重复的字符只出现一次。
+/// </summary>
+/// <input>1行字符串</input>
+/// <output>2行，第一行是转化的整数，第2行是所有整数的和</output>
+/// <sample>
+/// @12EiwTT78## YyYjfisjmp201mr()
+/// #()01278@EFIJMPRSTWY
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>03</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4267)
 

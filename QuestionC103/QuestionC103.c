@@ -1,12 +1,17 @@
-/*有n个人围成一圈，从1顺序排号。
- *从第一个人开始报数（1~3报数），
- *凡报到3的人退出圈子，问最后留下的人原来排在第几号。
- *输入：人数，不超过100人。
- *输出：最后留下的人的编号
- *
- *Cui Shuning (崔舒宁）2020/11
-*/
-
+/// <ID>C103</ID>
+/// <date>2020/11</date>
+/// <summary>
+/// 有n个小孩围成一圈，从1顺序排号。
+/// 从第一个人开始报数（1~k报数），凡报到k的人退出圈子，问最后留下的人原来排在第几号。
+/// </summary>
+/// <input>人数（不超过1000），以及报数的k，空格分隔。</input>
+/// <output>最后留下的人的编号</output>
+/// <sample>
+/// 234 3
+/// 230
+/// </sample>
+/// <author>Cui Shuning (崔舒宁）</author>
+/// <difficulty>03</difficulty>
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
@@ -15,9 +20,9 @@ int Josephus(int num, int chooseNum);
 
 int main()
 {
-	int n;
-	(void)scanf("%d", &n);
-	printf("%d", Josephus(n, 3));
+	int n, k;
+	(void)scanf("%d%d", &n, &k);
+	printf("%d", Josephus(n, k));
 	return 0;
 }
 
@@ -25,7 +30,7 @@ int main()
 int Josephus(int num, int chooseNum)
 {
 	//表示小孩的数组
-	int boy[200];
+	int boy[1000];
 	for (int i = 0; i < num; i++)
 	{
 		boy[i] = i + 1; //给小孩编号
