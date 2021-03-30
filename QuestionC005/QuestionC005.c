@@ -20,11 +20,11 @@
 
 int main()
 {
-	int eightDigitalInteger;
-	(void)scanf("%d", &eightDigitalInteger);
+	int eightDigital;
+	(void)scanf("%d", &eightDigital);
 	//取出中间4位数字
 	//Take out the middle 4 digits
-	int midFour = (eightDigitalInteger / 100) % 10000;
+	int midFour = (eightDigital / 100) % 10000;
 	printf("%d %d\n", midFour, midFour + 1024);
 	return 0;
 }

@@ -29,26 +29,31 @@ int main()
 	if (profit <= 100000)
 	{
 		printf("%d", (int)(profit * 0.1));
+		//如果不把结果强制转换为整数的话，会有一个警告；
+		//该警告可以忽略并不影响程序的运行结果
+		//If you do not cast the result to an integer, there will be a warning;
+		//The warning can be ignoredand does not affect the running result of the program
+		//printf("%d", profit * 0.1);
 	}
-	if (profit > 100000 && profit <= 200000)
+	else if (profit > 100000 && profit <= 200000)
 	{
 		printf("%d", (int)(100000 * 0.1 + (profit - 100000) * 0.08));
 	}
-	if (profit > 200000 && profit <= 400000)
+	else if (profit > 200000 && profit <= 400000)
 	{
 		printf("%d", (int)(100000 * 0.1 + 100000 * 0.08 + (profit - 200000) * 0.05));
 	}
-	if (profit > 400000 && profit <= 600000)
+	else if (profit > 400000 && profit <= 600000)
 	{
 		printf("%d", (int)(100000 * 0.1 + 100000 * 0.08 + 200000 * 0.05
 			       + (profit - 40000) * 0.03));
 	}
-	if (profit > 600000 && profit <= 1000000)
+	else if (profit > 600000 && profit <= 1000000)
 	{
 		printf("%d", (int)(100000 * 0.1 + 100000 * 0.08 + 200000 * 0.05
 			       + 220000 * 0.03 + (profit - 600000) * 0.02));
 	}
-	if (profit > 1000000)
+	else if (profit > 1000000)
 	{
 		printf("%d", (int)((100000 * 0.1 + 100000 * 0.08 + 200000 * 0.05
 			       + 20000 * 0.03 + 400000 * 0.02 + profit - 100000) * 0.01));

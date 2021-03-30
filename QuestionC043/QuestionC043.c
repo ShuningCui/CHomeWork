@@ -21,6 +21,10 @@ int main()
 	double a, b, c;
 	(void)scanf("%lf%lf%lf", &a, &b, &c);
 	double sum = a + b + c;
+	//实数加上0.5之后转为整数，就是四舍五入
+	//转为整数时直接抛弃所有小数部分
+	//The real number is converted to an integer after adding 0.5, which is rounding
+	//when converting to an integer, all fractional parts are directly discarded
 	printf("%g %d", sum, (int)(sum + 0.5));
 	return 0;
 }
