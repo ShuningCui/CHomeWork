@@ -22,12 +22,12 @@
 
 int main()
 {
-	unsigned x;
-	(void)scanf("%u", &x); //输入正整数 input a Positive integer
-	while (x > 1000)
+	int x;
+	(void)scanf("%d", &x); //输入整数 input a integer
+	while (x > 1000 || x <= 0)
 	{
 		printf("0\n");
-		(void)scanf("%u", &x); //接受下一个输入 Accept next input
+		(void)scanf("%d", &x); //接受下一个输入 Accept next input
 	}
 	printf("%d\n", (int)sqrt(x));
 	return 0;
