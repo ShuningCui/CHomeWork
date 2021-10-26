@@ -22,6 +22,9 @@ int main()
 {
 	double money, rate, years;
 	(void)scanf("%lf,%lf,%lf", &money, &years, &rate);
+	//以下示例了保留2位小数的写法（会自动四舍五入）
+	//The following example shows how to keep 2 decimal places 
+	//(it will be automatically rounded)
 	printf("%.2lf", money * pow((1 + rate), years));
 	return 0;
 }

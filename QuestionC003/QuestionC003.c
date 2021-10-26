@@ -28,15 +28,18 @@ int main()
 		printf("*");
 	}
 	printf("\n");
+
 	for (int i = 0; i < two; i++)
 	{
 		printf("*");
 	}
 	printf("\n");
+
 	for (int i = 0; i < three; i++)
 	{
 		printf("*");
 	}
 	printf("\n");
+
 	return 0;
 }

@@ -18,6 +18,26 @@
 #include<stdio.h>
 #include<math.h>
 
+int main()
+{
+	int m, n;
+	(void)scanf("%d%d", &m, &n);
+	int firstNum = 0;
+	for (int i = m; i <= n; i++)
+	{
+		//Find the number of digits of i
+		//求i的位数
+		int digi = (int)log10(i) + 1;
+		//Determine whether i is an isomorphic number
+		//判断i是否是同构数
+		if ((i * i) % (int)pow(10, digi) == i)
+		{
+			//Is the first number?
+			//是否是输出的第一个数
+			firstNum++ == 0 ? printf("%d", i) : printf(" %d", i);
+		}
+	}
+}
 /*
 int IsomorphicNumber(int x, int xx);
 int main()
@@ -61,23 +81,4 @@ int IsomorphicNumber(int x, int xx)
 }
 
 */
-int main()
-{
-	int m, n;
-	(void)scanf("%d%d", &m, &n);
-	int firstNum = 0;
-	for (int i = m; i <= n; i++)
-	{
-		//Find the number of digits of i
-		//求i的位数
-		int digi = (int)log10(i) + 1;
-		//Determine whether i is an isomorphic number
-		//判断i是否是同构数
-		if ((i * i) % (int)pow(10, digi) == i)
-		{
-			//Is the first number?
-			//是否是输出的第一个数
-			firstNum++ == 0 ? printf("%d", i) : printf(" %d", i);
-		}
-	}
-}
+

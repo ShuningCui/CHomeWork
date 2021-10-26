@@ -19,7 +19,11 @@ int main()
 {
 	int totalSecond;
 	(void)scanf("%d", &totalSecond);
+	//以下 %.2d示例了显示2位宽度整数的写法，不足补0。超出则忽略宽度设置
+	//The following %.2d shows an example of writing a 2-digit wide integer, 
+	//and 0 is not enough. Ignore the width setting if it exceeds
 	printf("%d:%.2d:%.2d\n", totalSecond / 3600,
 	       (totalSecond % 3600) / 60, totalSecond % 3600 % 60);
+	
 	return 0;
 }
