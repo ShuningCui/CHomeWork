@@ -38,3 +38,4 @@ int main()
 	printf("%c %d %c\n", letter04, letter04, letter04 + 1);
 	return 0;
 }
+

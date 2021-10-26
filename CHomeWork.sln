@@ -261,6 +261,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuestionC075", "QuestionC07
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Others", "Others", "{BF7A54F6-0864-46D3-BDB5-AD05B5CDFB6E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB6B8DDB-C91C-4748-88B8-1B75C4F0BD2E}"
+	ProjectSection(SolutionItems) = preProject
+		Note.md = Note.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

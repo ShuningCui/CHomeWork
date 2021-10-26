@@ -21,6 +21,11 @@ int main()
 	//input three numbers
 	int a, b, c;
 	(void)scanf("%d%d%d", &a, &b, &c);
+	//注意表达式（a+b+c)前面的浮点数数转换，否则，整数除以整数将得到一个整数。
+	//Pay attention to the floating-point number conversion in front of the expression (a+b+c), 
+	//otherwise, the integer divided by the integer will get an integer.
+	//也可以这样写：printf("%g", (a + b + c) / 3.0);
+	//you can get the same result: printf("%g", (a + b + c) / 3.0);
 	printf("%g", (float)(a + b + c) / 3);
 	return 0;
 }
