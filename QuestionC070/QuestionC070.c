@@ -48,6 +48,19 @@ int main()
 			if (a[i] == b[j])
 			{
 				ab[abn++] = a[i];
+				//同时从a,b中删除相同的元素
+				for (int k = i; k < an - 1; k++)
+				{
+					a[k] = a[k + 1];
+				}
+				for (int k = j; k < bn - 1; k++)
+				{
+					b[k] = b[k + 1];
+				}
+				an--;
+				bn--;
+				i--;
+				j--;
 			}
 		}
 	}
