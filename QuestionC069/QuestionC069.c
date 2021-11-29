@@ -20,6 +20,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
+#include<stdlib.h>
 
 int main()
 {
@@ -27,21 +28,17 @@ int main()
 	(void)scanf("%d", &inputNum);
 	inputNum = inputNum / 2;
 	printf("%d ", inputNum);
-	//反转数字inputnum
-	//Invert inputnum
-	int resverseInputNum = 0;
-	while (inputNum)
+	
+	//数字转为字符串
+	// number convert to string
+	char str[200];
+	_itoa(inputNum, str, 10);
+	//转换为字母逐个取出输出
+	//Take out one by one and output after converted to alphabeta
+	int i = 0;
+	while (str[i])
 	{
-		resverseInputNum = resverseInputNum * 10 +
-			inputNum % 10;
-		inputNum /= 10;
-	}
-	//将反转后的数字从各位逐个取出输出
-	//Take out the inverted numbers from each bit one by one and output
-	while (resverseInputNum)
-	{
-		printf("%c", resverseInputNum % 10 + 'a');
-		resverseInputNum /= 10;
+		printf("%c", str[i++] - '0' + 'a');
 	}
 	return 0;
 }
