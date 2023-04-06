@@ -18,8 +18,8 @@
 
 int main()
 {
-	unsigned x;
-	(void)scanf("%u", &x);
+	unsigned long long x;
+	(void)scanf("%llu", &x);
 	int sum = 0;
 	//分解x的每一位并相加
 	//Decompose each bit of x and add
