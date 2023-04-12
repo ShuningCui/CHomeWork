@@ -16,8 +16,8 @@
 
 #include<stdio.h>
 #include<string.h>
-
-char* IntToString(char* num, int n, int radix);
+#include<stdlib.h>
+char* Myitoa(int n, char* num, int radix);
 
 int main()
 {
@@ -25,7 +25,9 @@ int main()
 	int k;
 	(void)scanf("%d%d", &n, &k);
 	char num[100];
-	printf("%s", IntToString(num, n, k));
+	printf("%s", Myitoa(n,num,k));
+	//你也可以使用库函数来完成，只要下面一句就够了！
+	//printf("%s", _strupr(_itoa(n, num, k)));
 	return 0;
 }
 
@@ -37,7 +39,7 @@ int main()
 /// <param name="radix">radix, the specified base，指定的进制</param>
 /// <returns>the pointer of the decomposed character string,
 /// that is the pointer of num，指向分解后的字符串的指针，也就是指向num的指针</returns>
-char* IntToString(char* num, int n, int radix)
+char* Myitoa(int n, char* num, int radix)
 {
 	int i = 0;
 	if (n == 0)
