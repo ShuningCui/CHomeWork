@@ -18,6 +18,7 @@
 
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 
 int main()
 {
@@ -57,6 +58,17 @@ int main()
 			right /= 2;
 		}
 		i == 0 ? printf("%d", ip) : printf(".%d", ip);
+		
+		/*
+		* 使用库函数的做法
+		char ipStr[9];
+		char* voidp;
+		strncpy(ipStr, checkedStr + i * 8, 8);
+		ipStr[8] = 0;
+		i == 0 ? printf("%d", (int)strtol(ipStr,&voidp,2)) : printf(".%d", (int)strtol(ipStr, &voidp, 2));
+		*/
+		
 	}
 	return 0;
 }
+

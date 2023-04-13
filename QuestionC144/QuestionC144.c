@@ -15,7 +15,7 @@ Cui Shuning (崔舒宁）2020/11
 int Search(char* str, char ch);
 
 #include<stdio.h>
-
+#include<string.h>   //strchr
 int main()
 {
 	char inStr[100];
@@ -27,6 +27,12 @@ int main()
 	char ch = inStr[i];
 	inStr[i - 1] = 0;
 	printf("%d", Search(inStr, ch));
+	/*
+	* 使用库函数的版本
+	char* p = strchr(inStr, ch);
+	printf("%d", p ? p - inStr : -1);
+	
+	*/
 	return 0;
 }
 

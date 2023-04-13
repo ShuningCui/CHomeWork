@@ -34,6 +34,14 @@ int main()
 	}
 	starStr[len + i - 1] = 0; //放置结尾标记
 
+	/*
+	* 也可以使用库函数完成
+	* 
+	char star[100];
+	_strnset(star, '*', i-1);
+	strncat(starStr, star, i - 1);
+	*/
+
 	printf("%s", starStr);
 	return 0;
 }
